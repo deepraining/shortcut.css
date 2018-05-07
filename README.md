@@ -50,7 +50,7 @@ require('shortcut.css/dist/misc.css');
 
 ## segments code
 
-1. [common.css](./dist/common.css)
+1. [shortcut.css](./dist/shortcut.css)
 2. [margin.css](./dist/margin.css)
 3. [padding.css](./dist/padding.css)
 4. [border.css](./dist/border.css)
