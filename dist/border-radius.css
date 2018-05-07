@@ -1,0 +1,191 @@
+/**
+ *
+ * shortcut.css v0.0.1
+ *
+ * https://github.com/senntyou/shortcut.css
+ *
+ * @senntyou <jiangjinbelief@163.com>
+ *
+ * 2018-05-07 09:05:46
+ *
+ */
+.bd-rd-0 {
+  border-radius: 0px;
+}
+.bd-rd-t-l-0 {
+  border-top-left-radius: 0px !important;
+}
+.bd-rd-t-r-0 {
+  border-top-right-radius: 0px !important;
+}
+.bd-rd-b-l-0 {
+  border-bottom-left-radius: 0px !important;
+}
+.bd-rd-b-r-0 {
+  border-bottom-right-radius: 0px !important;
+}
+.bd-rd-2 {
+  border-radius: 2px;
+}
+.bd-rd-t-l-2 {
+  border-top-left-radius: 2px !important;
+}
+.bd-rd-t-r-2 {
+  border-top-right-radius: 2px !important;
+}
+.bd-rd-b-l-2 {
+  border-bottom-left-radius: 2px !important;
+}
+.bd-rd-b-r-2 {
+  border-bottom-right-radius: 2px !important;
+}
+.bd-rd-4 {
+  border-radius: 4px;
+}
+.bd-rd-t-l-4 {
+  border-top-left-radius: 4px !important;
+}
+.bd-rd-t-r-4 {
+  border-top-right-radius: 4px !important;
+}
+.bd-rd-b-l-4 {
+  border-bottom-left-radius: 4px !important;
+}
+.bd-rd-b-r-4 {
+  border-bottom-right-radius: 4px !important;
+}
+.bd-rd-6 {
+  border-radius: 6px;
+}
+.bd-rd-t-l-6 {
+  border-top-left-radius: 6px !important;
+}
+.bd-rd-t-r-6 {
+  border-top-right-radius: 6px !important;
+}
+.bd-rd-b-l-6 {
+  border-bottom-left-radius: 6px !important;
+}
+.bd-rd-b-r-6 {
+  border-bottom-right-radius: 6px !important;
+}
+.bd-rd-8 {
+  border-radius: 8px;
+}
+.bd-rd-t-l-8 {
+  border-top-left-radius: 8px !important;
+}
+.bd-rd-t-r-8 {
+  border-top-right-radius: 8px !important;
+}
+.bd-rd-b-l-8 {
+  border-bottom-left-radius: 8px !important;
+}
+.bd-rd-b-r-8 {
+  border-bottom-right-radius: 8px !important;
+}
+.bd-rd-10 {
+  border-radius: 10px;
+}
+.bd-rd-t-l-10 {
+  border-top-left-radius: 10px !important;
+}
+.bd-rd-t-r-10 {
+  border-top-right-radius: 10px !important;
+}
+.bd-rd-b-l-10 {
+  border-bottom-left-radius: 10px !important;
+}
+.bd-rd-b-r-10 {
+  border-bottom-right-radius: 10px !important;
+}
+.bd-rd-12 {
+  border-radius: 12px;
+}
+.bd-rd-t-l-12 {
+  border-top-left-radius: 12px !important;
+}
+.bd-rd-t-r-12 {
+  border-top-right-radius: 12px !important;
+}
+.bd-rd-b-l-12 {
+  border-bottom-left-radius: 12px !important;
+}
+.bd-rd-b-r-12 {
+  border-bottom-right-radius: 12px !important;
+}
+.bd-rd-14 {
+  border-radius: 14px;
+}
+.bd-rd-t-l-14 {
+  border-top-left-radius: 14px !important;
+}
+.bd-rd-t-r-14 {
+  border-top-right-radius: 14px !important;
+}
+.bd-rd-b-l-14 {
+  border-bottom-left-radius: 14px !important;
+}
+.bd-rd-b-r-14 {
+  border-bottom-right-radius: 14px !important;
+}
+.bd-rd-16 {
+  border-radius: 16px;
+}
+.bd-rd-t-l-16 {
+  border-top-left-radius: 16px !important;
+}
+.bd-rd-t-r-16 {
+  border-top-right-radius: 16px !important;
+}
+.bd-rd-b-l-16 {
+  border-bottom-left-radius: 16px !important;
+}
+.bd-rd-b-r-16 {
+  border-bottom-right-radius: 16px !important;
+}
+.bd-rd-18 {
+  border-radius: 18px;
+}
+.bd-rd-t-l-18 {
+  border-top-left-radius: 18px !important;
+}
+.bd-rd-t-r-18 {
+  border-top-right-radius: 18px !important;
+}
+.bd-rd-b-l-18 {
+  border-bottom-left-radius: 18px !important;
+}
+.bd-rd-b-r-18 {
+  border-bottom-right-radius: 18px !important;
+}
+.bd-rd-20 {
+  border-radius: 20px;
+}
+.bd-rd-t-l-20 {
+  border-top-left-radius: 20px !important;
+}
+.bd-rd-t-r-20 {
+  border-top-right-radius: 20px !important;
+}
+.bd-rd-b-l-20 {
+  border-bottom-left-radius: 20px !important;
+}
+.bd-rd-b-r-20 {
+  border-bottom-right-radius: 20px !important;
+}
+.bd-rd-50-pc {
+  border-radius: 50%;
+}
+.bd-rd-t-l-50-pc {
+  border-top-left-radius: 50% !important;
+}
+.bd-rd-t-r-50-pc {
+  border-top-right-radius: 50% !important;
+}
+.bd-rd-b-l-50-pc {
+  border-bottom-left-radius: 50% !important;
+}
+.bd-rd-b-r-50-pc {
+  border-bottom-right-radius: 50% !important;
+}

@@ -1,0 +1,20 @@
+
+// width
+
+.common-wd-pc-loop(@counter) when (@counter <= 100) {
+    .wd-@{counter}-pc {
+        width: unit(@counter, %);
+    }
+    .common-wd-pc-loop(@counter + 5);
+}
+
+.common-wd-pc-loop(0);
+
+.common-wd-loop(@counter) when (@counter <= 200) {
+    .wd-@{counter} {
+        width: unit(@counter, px);
+    }
+    .common-wd-loop(@counter + 10);
+}
+
+.common-wd-loop(10);

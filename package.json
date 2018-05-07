@@ -1,0 +1,31 @@
+{
+  "name": "shortcut.css",
+  "version": "0.0.1",
+  "description": "A shortcut css style collection, like margin, padding, border, width, height, font ...",
+  "homepage": "https://github.com/senntyou/shortcut.css",
+  "author": "senntyou",
+  "keywords": [
+    "shortcut",
+    "css",
+    "common"
+  ],
+  "main": "dist/shortcut.css",
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/senntyou/shortcut.css"
+  },
+  "files": [
+    "dist"
+  ],
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-append-prepend": "^1.0.4",
+    "gulp-less": "^3.4.0",
+    "moment": "^2.20.1"
+  },
+  "scripts": {
+    "dist": "node ./scripts/dist.js"
+  }
+}

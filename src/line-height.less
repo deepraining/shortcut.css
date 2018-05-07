@@ -1,0 +1,19 @@
+
+// line-height
+
+.l-hg-1 {
+    line-height: 1;
+}
+
+.common-l-hg-loop(@counter) when (@counter =< 9) {
+    .l-hg-1-@{counter} {
+        line-height: 1 + @counter / 10;
+    }
+    .common-l-hg-loop(@counter + 1);
+}
+
+.common-l-hg-loop(1);
+
+.l-hg-2 {
+    line-height: 2;
+}

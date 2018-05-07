@@ -1,0 +1,44 @@
+
+// margin
+
+.common-mg(@length) {
+    .mg-@{length} {
+        // here should not add `!important`
+        margin: unit(@length, px);
+    }
+    .mg-t-@{length} {
+        margin-top: unit(@length, px) !important;
+    }
+    .mg-l-@{length} {
+        margin-left: unit(@length, px) !important;
+    }
+    .mg-r-@{length} {
+        margin-right: unit(@length, px) !important;
+    }
+    .mg-b-@{length} {
+        margin-bottom: unit(@length, px) !important;
+    }
+}
+
+.common-mg-loop(@counter) when (@counter <= 60) {
+    .common-mg(@counter);
+    .common-mg-loop(@counter + 5);
+}
+
+.common-mg-loop(0);
+
+.mg-auto {
+    margin: auto;
+}
+.mg-t-auto {
+    margin-top: auto !important;
+}
+.mg-l-auto {
+    margin-left: auto !important;
+}
+.mg-r-auto {
+    margin-right: auto !important;
+}
+.mg-b-auto {
+    margin-bottom: auto !important;
+}

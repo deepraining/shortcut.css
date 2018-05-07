@@ -1,0 +1,20 @@
+
+// height
+
+.common-hg-pc-loop(@counter) when (@counter <= 100) {
+    .hg-@{counter}-pc {
+        height: unit(@counter, %);
+    }
+    .common-hg-pc-loop(@counter + 5);
+}
+
+.common-hg-pc-loop(0);
+
+.common-hg-loop(@counter) when (@counter <= 200) {
+    .hg-@{counter} {
+        height: unit(@counter, px);
+    }
+    .common-hg-loop(@counter + 10);
+}
+
+.common-hg-loop(10);

@@ -1,0 +1,24 @@
+
+// font
+
+.common-f-s(@size) {
+    font-size: unit(@size, px);
+}
+
+.common-f-s-loop(@counter) when (@counter =< 20) {
+    .f-s-@{counter} {
+        .common-f-s(@counter);
+    }
+    .common-f-s-loop(@counter + 1);
+}
+
+.common-f-s-loop(8);
+
+
+// font-weight
+.f-wg-bold {
+    font-weight: bold;
+}
+.f-wg-normal {
+    font-weight: normal!important;
+}

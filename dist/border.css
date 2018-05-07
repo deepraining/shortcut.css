@@ -1,0 +1,176 @@
+/**
+ *
+ * shortcut.css v0.0.1
+ *
+ * https://github.com/senntyou/shortcut.css
+ *
+ * @senntyou <jiangjinbelief@163.com>
+ *
+ * 2018-05-07 09:05:46
+ *
+ */
+.bd-0 {
+  border: 1px solid #000000;
+}
+.bd-l-0 {
+  border-left: 1px solid #000000 !important;
+}
+.bd-t-0 {
+  border-top: 1px solid #000000 !important;
+}
+.bd-r-0 {
+  border-right: 1px solid #000000 !important;
+}
+.bd-b-0 {
+  border-bottom: 1px solid #000000 !important;
+}
+.bd-3 {
+  border: 1px solid #333333;
+}
+.bd-l-3 {
+  border-left: 1px solid #333333 !important;
+}
+.bd-t-3 {
+  border-top: 1px solid #333333 !important;
+}
+.bd-r-3 {
+  border-right: 1px solid #333333 !important;
+}
+.bd-b-3 {
+  border-bottom: 1px solid #333333 !important;
+}
+.bd-6 {
+  border: 1px solid #666666;
+}
+.bd-l-6 {
+  border-left: 1px solid #666666 !important;
+}
+.bd-t-6 {
+  border-top: 1px solid #666666 !important;
+}
+.bd-r-6 {
+  border-right: 1px solid #666666 !important;
+}
+.bd-b-6 {
+  border-bottom: 1px solid #666666 !important;
+}
+.bd-9 {
+  border: 1px solid #999999;
+}
+.bd-l-9 {
+  border-left: 1px solid #999999 !important;
+}
+.bd-t-9 {
+  border-top: 1px solid #999999 !important;
+}
+.bd-r-9 {
+  border-right: 1px solid #999999 !important;
+}
+.bd-b-9 {
+  border-bottom: 1px solid #999999 !important;
+}
+.bd-a {
+  border: 1px solid #aaaaaa;
+}
+.bd-l-a {
+  border-left: 1px solid #aaaaaa !important;
+}
+.bd-t-a {
+  border-top: 1px solid #aaaaaa !important;
+}
+.bd-r-a {
+  border-right: 1px solid #aaaaaa !important;
+}
+.bd-b-a {
+  border-bottom: 1px solid #aaaaaa !important;
+}
+.bd-b {
+  border: 1px solid #bbbbbb;
+}
+.bd-l-b {
+  border-left: 1px solid #bbbbbb !important;
+}
+.bd-t-b {
+  border-top: 1px solid #bbbbbb !important;
+}
+.bd-r-b {
+  border-right: 1px solid #bbbbbb !important;
+}
+.bd-b-b {
+  border-bottom: 1px solid #bbbbbb !important;
+}
+.bd-c {
+  border: 1px solid #cccccc;
+}
+.bd-l-c {
+  border-left: 1px solid #cccccc !important;
+}
+.bd-t-c {
+  border-top: 1px solid #cccccc !important;
+}
+.bd-r-c {
+  border-right: 1px solid #cccccc !important;
+}
+.bd-b-c {
+  border-bottom: 1px solid #cccccc !important;
+}
+.bd-d {
+  border: 1px solid #dddddd;
+}
+.bd-l-d {
+  border-left: 1px solid #dddddd !important;
+}
+.bd-t-d {
+  border-top: 1px solid #dddddd !important;
+}
+.bd-r-d {
+  border-right: 1px solid #dddddd !important;
+}
+.bd-b-d {
+  border-bottom: 1px solid #dddddd !important;
+}
+.bd-e {
+  border: 1px solid #eeeeee;
+}
+.bd-l-e {
+  border-left: 1px solid #eeeeee !important;
+}
+.bd-t-e {
+  border-top: 1px solid #eeeeee !important;
+}
+.bd-r-e {
+  border-right: 1px solid #eeeeee !important;
+}
+.bd-b-e {
+  border-bottom: 1px solid #eeeeee !important;
+}
+.bd-f {
+  border: 1px solid #ffffff;
+}
+.bd-l-f {
+  border-left: 1px solid #ffffff !important;
+}
+.bd-t-f {
+  border-top: 1px solid #ffffff !important;
+}
+.bd-r-f {
+  border-right: 1px solid #ffffff !important;
+}
+.bd-b-f {
+  border-bottom: 1px solid #ffffff !important;
+}
+.bd-none {
+  border: none;
+}
+.bd-l-none {
+  border-left: none !important;
+}
+.bd-t-none {
+  border-top: none !important;
+}
+.bd-r-none {
+  border-right: none !important;
+}
+.bd-b-none {
+  border-bottom: none !important;
+}
