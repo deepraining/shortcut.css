@@ -5,47 +5,47 @@
 install
 
 ```
-npm install shortcut.css --save
+npm install @senntyou/shortcut.css --save
 ```
 
 how to use
 
 ```
-require('shortcut.css');
+require('@senntyou/shortcut.css');
 ```
 
 use segments alone
 
 ```
 // margin
-require('shortcut.css/dist/margin.css');
+require('@senntyou/shortcut.css/dist/margin.css');
 
 // padding
-require('shortcut.css/dist/padding.css');
+require('@senntyou/shortcut.css/dist/padding.css');
 
 // border
-require('shortcut.css/dist/border.css');
+require('@senntyou/shortcut.css/dist/border.css');
 
 // border-radius
-require('shortcut.css/dist/border-radius.css');
+require('@senntyou/shortcut.css/dist/border-radius.css');
 
 // line-height
-require('shortcut.css/dist/line-height.css');
+require('@senntyou/shortcut.css/dist/line-height.css');
 
 // font
-require('shortcut.css/dist/font.css');
+require('@senntyou/shortcut.css/dist/font.css');
 
 // position
-require('shortcut.css/dist/position.css');
+require('@senntyou/shortcut.css/dist/position.css');
 
 // width
-require('shortcut.css/dist/width.css');
+require('@senntyou/shortcut.css/dist/width.css');
 
 // height
-require('shortcut.css/dist/height.css');
+require('@senntyou/shortcut.css/dist/height.css');
 
 // misc
-require('shortcut.css/dist/misc.css');
+require('@senntyou/shortcut.css/dist/misc.css');
 ```
 
 ## segments code
