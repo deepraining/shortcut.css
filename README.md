@@ -131,4 +131,4 @@ require('@senntyou/shortcut.css/dist/misc.css');
 
 15. `display`: `dp`
 
-16: `text-align`: `ta`
+16: `text-align`: `t-a`

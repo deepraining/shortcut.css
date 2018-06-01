@@ -1,12 +1,12 @@
 /**
  *
- * shortcut.css v0.0.2-alpha
+ * shortcut.css v0.0.2
  *
  * https://github.com/senntyou/shortcut.css
  *
  * @senntyou <jiangjinbelief@163.com>
  *
- * 2018-05-15 15:15:11
+ * 2018-06-01 17:15:50
  *
  */
 .one-half {
@@ -101,16 +101,16 @@
 .clear-right {
   clear: right;
 }
-.ta-left {
+.t-a-left {
   text-align: left;
 }
-.ta-right {
+.t-a-right {
   text-align: right;
 }
-.ta-center {
+.t-a-center {
   text-align: center;
 }
-.ta-justify {
+.t-a-justify {
   text-align: justify;
 }
 .clean {

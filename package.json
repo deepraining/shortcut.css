@@ -1,6 +1,6 @@
 {
   "name": "@senntyou/shortcut.css",
-  "version": "0.0.2-alpha",
+  "version": "0.0.2",
   "description": "A shortcut css style collection, like margin, padding, border, width, height, font ...",
   "homepage": "https://github.com/senntyou/shortcut.css",
   "author": "senntyou",

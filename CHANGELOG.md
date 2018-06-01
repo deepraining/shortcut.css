@@ -7,3 +7,4 @@
 ## 0.0.2
 
 - fix `no-underline`
+- `ta` -> `t-a`
