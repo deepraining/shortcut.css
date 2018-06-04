@@ -1,10 +1,11 @@
-# changelog
-
-## 0.0.1
-
-- init
+# Changelog
 
 ## 0.0.2
 
-- fix `no-underline`
+- Fix `no-underline`.
 - `ta` -> `t-a`
+
+
+## 0.0.1
+
+- Init.

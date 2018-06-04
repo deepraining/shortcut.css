@@ -1,20 +1,22 @@
-# A shortcut css style collection, like margin, padding, border, width, height, font ...
+# shortcut.css
+
+A shortcut css style collection, like margin, padding, border, width, height, font ...
 
 ## Quick start
 
-install
+### install
 
 ```
 npm install @senntyou/shortcut.css --save
 ```
 
-how to use
+### how to use
 
 ```
 require('@senntyou/shortcut.css');
 ```
 
-use segments alone
+### use segments alone
 
 ```
 // margin
@@ -64,12 +66,12 @@ require('@senntyou/shortcut.css/dist/misc.css');
 
 ## base rule
 
-1. use `-` to concat attr and value, and if `-` exists in attr, just keep it, like `mg-l-10 -> margin-left: 10px`
-2. use 2 consonants to represent a long text word, and 1 consonant to represent a short text word, like `mg-l -> margin-left`
-3. if value is integer, just keep it, like `mg-10 -> margin: 10px`
-4. if value is string, just keep it, like `mg-auto -> margin: auto`
-5. if value is decimal, use `-` to split it, like `l-hg-1-1 -> line-height: 1.1`
-6. use `-` to concat special unit, like `50-pc -> 50%`
+1. Use `-` to concat attr and value, and if `-` exists in attr, just keep it, like `mg-l-10 -> margin-left: 10px`.
+2. Use 2 consonants to represent a long text word, and 1 consonant to represent a short text word, like `mg-l -> margin-left`.
+3. If value is integer, just keep it, like `mg-10 -> margin: 10px`.
+4. If value is string, just keep it, like `mg-auto -> margin: auto`.
+5. If value is decimal, use `-` to split it, like `l-hg-1-1 -> line-height: 1.1`.
+6. Use `-` to concat special unit, like `50-pc -> 50%`.
 
 ## special unit:
 
