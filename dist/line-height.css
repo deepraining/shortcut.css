@@ -1,12 +1,12 @@
 /**
  *
- * shortcut.css v0.0.2
+ * shortcut.css v0.0.3-alpha.1
  *
  * https://github.com/senntyou/shortcut.css
  *
  * @senntyou <jiangjinbelief@163.com>
  *
- * 2018-06-01 17:15:50
+ * 2018-06-27 14:37:41
  *
  */
 .l-hg-1 {
@@ -41,4 +41,61 @@
 }
 .l-hg-2 {
   line-height: 2;
+}
+.l-hg-14 {
+  line-height: 14px;
+}
+.l-hg-16 {
+  line-height: 16px;
+}
+.l-hg-18 {
+  line-height: 18px;
+}
+.l-hg-20 {
+  line-height: 20px;
+}
+.l-hg-22 {
+  line-height: 22px;
+}
+.l-hg-24 {
+  line-height: 24px;
+}
+.l-hg-26 {
+  line-height: 26px;
+}
+.l-hg-28 {
+  line-height: 28px;
+}
+.l-hg-30 {
+  line-height: 30px;
+}
+.l-hg-32 {
+  line-height: 32px;
+}
+.l-hg-34 {
+  line-height: 34px;
+}
+.l-hg-36 {
+  line-height: 36px;
+}
+.l-hg-38 {
+  line-height: 38px;
+}
+.l-hg-40 {
+  line-height: 40px;
+}
+.l-hg-42 {
+  line-height: 42px;
+}
+.l-hg-44 {
+  line-height: 44px;
+}
+.l-hg-46 {
+  line-height: 46px;
+}
+.l-hg-48 {
+  line-height: 48px;
+}
+.l-hg-50 {
+  line-height: 50px;
 }
