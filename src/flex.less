@@ -1,0 +1,11 @@
+
+// flex
+
+.common-flex-loop(@counter) when (@counter <= 12) {
+    .fx-@{counter} {
+        flex: @counter;
+    }
+    .common-flex-loop(@counter + 1);
+}
+
+.common-flex-loop(1);

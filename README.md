@@ -62,7 +62,8 @@ require('@senntyou/shortcut.css/dist/misc.css');
 8. [position.css](./dist/position.css)
 9. [width.css](./dist/width.css)
 10. [height.css](./dist/height.css)
-11. [misc.css](./dist/misc.css)
+11. [flex.css](./dist/flex.css)
+12. [misc.css](./dist/misc.css)
 
 ## base rule
 
@@ -133,4 +134,6 @@ require('@senntyou/shortcut.css/dist/misc.css');
 
 15. `display`: `dp`
 
-16. `text-align`: `t-a`
+16. `flex`: `fx`
+
+17. `text-align`: `t-a`

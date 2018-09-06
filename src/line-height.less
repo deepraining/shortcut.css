@@ -17,3 +17,13 @@
 .l-hg-2 {
     line-height: 2;
 }
+
+
+.common-l-hg-loop-2(@counter) when (@counter =< 50) {
+    .l-hg-@{counter} {
+        line-height: unit(@counter, px);
+    }
+    .common-l-hg-loop-2(@counter + 2);
+}
+
+.common-l-hg-loop-2(14);
