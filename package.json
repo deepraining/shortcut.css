@@ -22,10 +22,9 @@
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-append-prepend": "^1.0.4",
-    "gulp-less": "^3.4.0",
-    "moment": "^2.20.1"
+    "gulp-less": "^3.4.0"
   },
   "scripts": {
-    "dist": "node ./scripts/dist.js"
+    "build": "node ./scripts/build.js"
   }
 }

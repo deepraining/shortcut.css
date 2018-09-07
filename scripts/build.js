@@ -5,11 +5,10 @@
 const gulp = require('gulp');
 const less = require('gulp-less');
 const gap = require('gulp-append-prepend');
-const moment = require('moment');
 
 const packageJson = require('../package.json');
 
-gulp.task('dist', () => {
+gulp.task('build', () => {
     // this is based on project root, so `../src` is not correct
     return gulp.src('./src/**/*.less')
         .pipe(less())
@@ -22,12 +21,10 @@ gulp.task('dist', () => {
  *
  * @senntyou <jiangjinbelief@163.com>
  *
- * ${moment().format('YYYY-MM-DD HH:mm:ss')}
- *
  */
         `))
         // this is based on project root, so `../dist` is not correct
         .pipe(gulp.dest('./dist'));
 });
 
-gulp.start('dist');
+gulp.start('build');
