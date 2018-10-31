@@ -13,16 +13,16 @@ import '@senntyou/shortcut.css';
 - [less source codes](./src/index.less)
 - [css codes](./lib/shortcut.css)
 
-## base rule
+## class name rules
 
-1. Use `-` to concat attr and value, and if `-` exists in attr, just keep it, like `mg-l-10 -> margin-left: 10px`.
-2. Use 2 consonants to represent a long text word, and 1 consonant to represent a short text word, like `mg-l -> margin-left`.
-3. If value is integer, just keep it, like `mg-10 -> margin: 10px`.
-4. If value is string, just keep it, like `mg-auto -> margin: auto`.
-5. If value is decimal, use `-` to split it, like `l-hg-1-1 -> line-height: 1.1`.
-6. Use `-` to concat special unit, like `50-pc -> 50%`.
+1. use `-` to concat attr and value, and if `-` exists in attr, just keep it: `mg-l-10 -> margin-left: 10px`
+2. use 2 consonants to represent a long text word, and 1 consonant to represent a short text word： `mg-l -> margin-left`
+3. if value is integer, just keep it: `mg-10 -> margin: 10px`
+4. if value is string, just keep it: `mg-auto -> margin: auto`
+5. if value is decimal, use `-` to split it: `l-hg-1-1 -> line-height: 1.1`
+6. use `-` to concat special unit: `50-pc -> 50%`
 
-## special unit:
+## special unit
 
 - `pc -> %`
 
