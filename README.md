@@ -1,69 +1,17 @@
 # shortcut.css
 
-A shortcut css style collection, like margin, padding, border, width, height, font ...
-
-## Quick start
-
-### install
+A commonly used styles collection, margin, padding, border, width, height, font ...
 
 ```
 npm install @senntyou/shortcut.css --save
 ```
 
-### how to use
-
 ```
-require('@senntyou/shortcut.css');
+import '@senntyou/shortcut.css';
 ```
 
-### use segments alone
-
-```
-// margin
-require('@senntyou/shortcut.css/dist/margin.css');
-
-// padding
-require('@senntyou/shortcut.css/dist/padding.css');
-
-// border
-require('@senntyou/shortcut.css/dist/border.css');
-
-// border-radius
-require('@senntyou/shortcut.css/dist/border-radius.css');
-
-// line-height
-require('@senntyou/shortcut.css/dist/line-height.css');
-
-// font
-require('@senntyou/shortcut.css/dist/font.css');
-
-// position
-require('@senntyou/shortcut.css/dist/position.css');
-
-// width
-require('@senntyou/shortcut.css/dist/width.css');
-
-// height
-require('@senntyou/shortcut.css/dist/height.css');
-
-// misc
-require('@senntyou/shortcut.css/dist/misc.css');
-```
-
-## segments code
-
-1. [shortcut.css](./dist/shortcut.css)
-2. [margin.css](./dist/margin.css)
-3. [padding.css](./dist/padding.css)
-4. [border.css](./dist/border.css)
-5. [border-radius.css](./dist/border-radius.css)
-6. [line-height.css](./dist/line-height.css)
-7. [font.css](./dist/font.css)
-8. [position.css](./dist/position.css)
-9. [width.css](./dist/width.css)
-10. [height.css](./dist/height.css)
-11. [flex.css](./dist/flex.css)
-12. [misc.css](./dist/misc.css)
+- [less source codes](./src/index.less)
+- [css codes](./lib/shortcut.css)
 
 ## base rule
 
@@ -76,37 +24,41 @@ require('@senntyou/shortcut.css/dist/misc.css');
 
 ## special unit:
 
-* `pc -> %`
+- `pc -> %`
 
 ## abbreviation
 
 1. `margin`:
-    - `margin`: `mg`
-    - `margin-left`: `mg-l`
-    - `margin-top`: `mg-t`
-    - `margin-right`: `mg-r`
-    - `margin-bottom`: `mg-b`
+
+   - `margin`: `mg`
+   - `margin-left`: `mg-l`
+   - `margin-top`: `mg-t`
+   - `margin-right`: `mg-r`
+   - `margin-bottom`: `mg-b`
 
 2. `padding`:
-    - `padding`: `pd`
-    - `padding-left`: `pd-l`
-    - `padding-top`: `pd-t`
-    - `padding-right`: `pd-r`
-    - `padding-bottom`: `pd-b`
+
+   - `padding`: `pd`
+   - `padding-left`: `pd-l`
+   - `padding-top`: `pd-t`
+   - `padding-right`: `pd-r`
+   - `padding-bottom`: `pd-b`
 
 3. `border`:
-    - `border`: `bd`
-    - `border-left`: `bd-l`
-    - `border-top`: `bd-t`
-    - `border-right`: `bd-r`
-    - `border-bottom`: `bd-b`
+
+   - `border`: `bd`
+   - `border-left`: `bd-l`
+   - `border-top`: `bd-t`
+   - `border-right`: `bd-r`
+   - `border-bottom`: `bd-b`
 
 4. `border-radius`:
-    - `border-radius`: `bd-rd`
-    - `border-top-left-radius`: `bd-rd-t-l`
-    - `border-top-right-radius`: `bd-rd-t-r`
-    - `border-bottom-left-radius`: `bd-rd-b-l`
-    - `border-bottom-right-radius`: `bd-rd-b-r`
+
+   - `border-radius`: `bd-rd`
+   - `border-top-left-radius`: `bd-rd-t-l`
+   - `border-top-right-radius`: `bd-rd-t-r`
+   - `border-bottom-left-radius`: `bd-rd-b-l`
+   - `border-bottom-right-radius`: `bd-rd-b-r`
 
 5. `line-height`: `l-hg`
 
@@ -115,10 +67,11 @@ require('@senntyou/shortcut.css/dist/misc.css');
 7. `font-weight`: `f-wg`
 
 8. `position`:
-    - `left`: `l`
-    - `right`: `r`
-    - `top`: `t`
-    - `bottom`: `b`
+
+   - `left`: `l`
+   - `right`: `r`
+   - `top`: `t`
+   - `bottom`: `b`
 
 9. `width`: `wd`
 

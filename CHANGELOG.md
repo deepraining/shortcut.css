@@ -1,4 +1,8 @@
-# Changelog
+# changelog
+
+## 0.1.0 [2018-10-31]
+
+- Use `rollup` to build project.
 
 ## 0.0.3 [2018-06-27]
 
@@ -8,7 +12,6 @@
 
 - Fix `no-underline`.
 - `ta` -> `t-a`
-
 
 ## 0.0.1
 
