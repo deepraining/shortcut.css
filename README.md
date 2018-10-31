@@ -1,112 +1,64 @@
 # shortcut.css
 
-A shortcut css style collection, like margin, padding, border, width, height, font ...
-
-## Quick start
-
-### install
+A commonly used styles collection, margin, padding, border, width, height, font ...
 
 ```
 npm install @senntyou/shortcut.css --save
 ```
 
-### how to use
-
 ```
-require('@senntyou/shortcut.css');
+import '@senntyou/shortcut.css';
 ```
 
-### use segments alone
+- [less source codes](./src/index.less)
+- [css codes](./lib/shortcut.css)
 
-```
-// margin
-require('@senntyou/shortcut.css/dist/margin.css');
+## class name rules
 
-// padding
-require('@senntyou/shortcut.css/dist/padding.css');
+1. use `-` to concat attr and value, and if `-` exists in attr, just keep it: `mg-l-10 -> margin-left: 10px`
+2. use 2 consonants to represent a long text word, and 1 consonant to represent a short text word： `mg-l -> margin-left`
+3. if value is integer, just keep it: `mg-10 -> margin: 10px`
+4. if value is string, just keep it: `mg-auto -> margin: auto`
+5. if value is decimal, use `-` to split it: `l-hg-1-1 -> line-height: 1.1`
+6. use `-` to concat special unit: `50-pc -> 50%`
 
-// border
-require('@senntyou/shortcut.css/dist/border.css');
+## special unit
 
-// border-radius
-require('@senntyou/shortcut.css/dist/border-radius.css');
-
-// line-height
-require('@senntyou/shortcut.css/dist/line-height.css');
-
-// font
-require('@senntyou/shortcut.css/dist/font.css');
-
-// position
-require('@senntyou/shortcut.css/dist/position.css');
-
-// width
-require('@senntyou/shortcut.css/dist/width.css');
-
-// height
-require('@senntyou/shortcut.css/dist/height.css');
-
-// misc
-require('@senntyou/shortcut.css/dist/misc.css');
-```
-
-## segments code
-
-1. [shortcut.css](./dist/shortcut.css)
-2. [margin.css](./dist/margin.css)
-3. [padding.css](./dist/padding.css)
-4. [border.css](./dist/border.css)
-5. [border-radius.css](./dist/border-radius.css)
-6. [line-height.css](./dist/line-height.css)
-7. [font.css](./dist/font.css)
-8. [position.css](./dist/position.css)
-9. [width.css](./dist/width.css)
-10. [height.css](./dist/height.css)
-11. [flex.css](./dist/flex.css)
-12. [misc.css](./dist/misc.css)
-
-## base rule
-
-1. Use `-` to concat attr and value, and if `-` exists in attr, just keep it, like `mg-l-10 -> margin-left: 10px`.
-2. Use 2 consonants to represent a long text word, and 1 consonant to represent a short text word, like `mg-l -> margin-left`.
-3. If value is integer, just keep it, like `mg-10 -> margin: 10px`.
-4. If value is string, just keep it, like `mg-auto -> margin: auto`.
-5. If value is decimal, use `-` to split it, like `l-hg-1-1 -> line-height: 1.1`.
-6. Use `-` to concat special unit, like `50-pc -> 50%`.
-
-## special unit:
-
-* `pc -> %`
+- `pc -> %`
 
 ## abbreviation
 
 1. `margin`:
-    - `margin`: `mg`
-    - `margin-left`: `mg-l`
-    - `margin-top`: `mg-t`
-    - `margin-right`: `mg-r`
-    - `margin-bottom`: `mg-b`
+
+   - `margin`: `mg`
+   - `margin-left`: `mg-l`
+   - `margin-top`: `mg-t`
+   - `margin-right`: `mg-r`
+   - `margin-bottom`: `mg-b`
 
 2. `padding`:
-    - `padding`: `pd`
-    - `padding-left`: `pd-l`
-    - `padding-top`: `pd-t`
-    - `padding-right`: `pd-r`
-    - `padding-bottom`: `pd-b`
+
+   - `padding`: `pd`
+   - `padding-left`: `pd-l`
+   - `padding-top`: `pd-t`
+   - `padding-right`: `pd-r`
+   - `padding-bottom`: `pd-b`
 
 3. `border`:
-    - `border`: `bd`
-    - `border-left`: `bd-l`
-    - `border-top`: `bd-t`
-    - `border-right`: `bd-r`
-    - `border-bottom`: `bd-b`
+
+   - `border`: `bd`
+   - `border-left`: `bd-l`
+   - `border-top`: `bd-t`
+   - `border-right`: `bd-r`
+   - `border-bottom`: `bd-b`
 
 4. `border-radius`:
-    - `border-radius`: `bd-rd`
-    - `border-top-left-radius`: `bd-rd-t-l`
-    - `border-top-right-radius`: `bd-rd-t-r`
-    - `border-bottom-left-radius`: `bd-rd-b-l`
-    - `border-bottom-right-radius`: `bd-rd-b-r`
+
+   - `border-radius`: `bd-rd`
+   - `border-top-left-radius`: `bd-rd-t-l`
+   - `border-top-right-radius`: `bd-rd-t-r`
+   - `border-bottom-left-radius`: `bd-rd-b-l`
+   - `border-bottom-right-radius`: `bd-rd-b-r`
 
 5. `line-height`: `l-hg`
 
@@ -115,10 +67,11 @@ require('@senntyou/shortcut.css/dist/misc.css');
 7. `font-weight`: `f-wg`
 
 8. `position`:
-    - `left`: `l`
-    - `right`: `r`
-    - `top`: `t`
-    - `bottom`: `b`
+
+   - `left`: `l`
+   - `right`: `r`
+   - `top`: `t`
+   - `bottom`: `b`
 
 9. `width`: `wd`
 
