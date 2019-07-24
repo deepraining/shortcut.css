@@ -1,5 +1,9 @@
 # changelog
 
+## 0.1.1
+
+- Add `.text-ellipsis`.
+
 ## 0.1.0 [2018-10-31]
 
 - Use `rollup` to build project.

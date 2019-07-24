@@ -1,8 +1,8 @@
 # shortcut.css
 
-[English Documentation](./README.en.md)
+[中文文档](./README.md)
 
-一个通用的样式类集合, margin, padding, border, width, height, font ...
+A commonly used styles collection, margin, padding, border, width, height, font ...
 
 ```
 npm install @senntyou/shortcut.css --save
@@ -12,23 +12,23 @@ npm install @senntyou/shortcut.css --save
 import '@senntyou/shortcut.css';
 ```
 
-- [less 源代码](./src/index.less)
-- [css 代码](./lib/shortcut.css)
+- [less source codes](./src/index.less)
+- [css codes](./lib/shortcut.css)
 
-## 类名规则
+## class name rules
 
-1. 用 `-` 链接属性与值, 如果属性中已有 `-`, 则保留: `mg-l-10 -> margin-left: 10px`
-2. 用 2 个辅音字母代替长单词, 用 1 个辅音字母代替短单词： `mg-l -> margin-left`
-3. 如果值是整数, 则保留: `mg-10 -> margin: 10px`
-4. 如果值是字符串, 则保留: `mg-auto -> margin: auto`
-5. 如果值是小数, 则用 `-` 分割开: `l-hg-1-1 -> line-height: 1.1`
-6. 用 `-` 连接特殊单位: `50-pc -> 50%`
+1. use `-` to concat attr and value, and if `-` exists in attr, just keep it: `mg-l-10 -> margin-left: 10px`
+2. use 2 consonants to represent a long text word, and 1 consonant to represent a short text word： `mg-l -> margin-left`
+3. if value is integer, just keep it: `mg-10 -> margin: 10px`
+4. if value is string, just keep it: `mg-auto -> margin: auto`
+5. if value is decimal, use `-` to split it: `l-hg-1-1 -> line-height: 1.1`
+6. use `-` to concat special unit: `50-pc -> 50%`
 
-## 特殊单位
+## special unit
 
 - `pc -> %`
 
-## 缩写
+## abbreviation
 
 1. `margin`:
 
