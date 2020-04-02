@@ -1,44 +1,44 @@
-
-// border-radius
-
-.common-bd-rd(@length) {
-    .bd-rd-@{length} {
-        // here should not add `!important`
-        border-radius: unit(@length, px);
-    }
-    .bd-rd-t-l-@{length} {
-        border-top-left-radius: unit(@length, px) !important;
-    }
-    .bd-rd-t-r-@{length} {
-        border-top-right-radius: unit(@length, px) !important;
-    }
-    .bd-rd-b-l-@{length} {
-        border-bottom-left-radius: unit(@length, px) !important;
-    }
-    .bd-rd-b-r-@{length} {
-        border-bottom-right-radius: unit(@length, px) !important;
-    }
+.bd-rd(@length) {
+  .bd-rd-@{length} {
+    border-radius: unit(@length, px);
+  }
+  .bd-rd-t-l-@{length} {
+    border-top-left-radius: unit(@length, px) !important;
+  }
+  .bd-rd-t-r-@{length} {
+    border-top-right-radius: unit(@length, px) !important;
+  }
+  .bd-rd-b-l-@{length} {
+    border-bottom-left-radius: unit(@length, px) !important;
+  }
+  .bd-rd-b-r-@{length} {
+    border-bottom-right-radius: unit(@length, px) !important;
+  }
 }
 
-.common-bd-rd-loop(@counter) when (@counter <= 20) {
-    .common-bd-rd(@counter);
-    .common-bd-rd-loop(@counter + 2);
+.bd-rd-loop(@counter) when (@counter <= 20) {
+  .bd-rd(@counter);
+  .bd-rd-loop(@counter + 2);
 }
 
-.common-bd-rd-loop(0);
+.bd-rd-loop(0);
 
 .bd-rd-50-pc {
-    border-radius: 50%;
+  border-radius: 50%;
 }
+
 .bd-rd-t-l-50-pc {
-    border-top-left-radius: 50% !important;
+  border-top-left-radius: 50% !important;
 }
+
 .bd-rd-t-r-50-pc {
-    border-top-right-radius: 50% !important;
+  border-top-right-radius: 50% !important;
 }
+
 .bd-rd-b-l-50-pc {
-    border-bottom-left-radius: 50% !important;
+  border-bottom-left-radius: 50% !important;
 }
+
 .bd-rd-b-r-50-pc {
-    border-bottom-right-radius: 50% !important;
+  border-bottom-right-radius: 50% !important;
 }

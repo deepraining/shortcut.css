@@ -1,29 +1,24 @@
-
-// line-height
-
 .l-hg-1 {
-    line-height: 1;
+  line-height: 1;
 }
 
-.common-l-hg-loop(@counter) when (@counter =< 9) {
-    .l-hg-1-@{counter} {
-        line-height: 1 + @counter / 10;
-    }
-    .common-l-hg-loop(@counter + 1);
+.l-hg-loop(@counter) when (@counter =< 9) {
+  .l-hg-1-@{counter} {
+    line-height: 1 + @counter / 10;
+  }
+  .l-hg-loop(@counter + 1);
 }
-
-.common-l-hg-loop(1);
+.l-hg-loop(1);
 
 .l-hg-2 {
-    line-height: 2;
+  line-height: 2;
 }
 
-
-.common-l-hg-loop-2(@counter) when (@counter =< 50) {
-    .l-hg-@{counter} {
-        line-height: unit(@counter, px);
-    }
-    .common-l-hg-loop-2(@counter + 2);
+.l-hg-loop-2(@counter) when (@counter =< 50) {
+  .l-hg-@{counter} {
+    line-height: unit(@counter, px);
+  }
+  .l-hg-loop-2(@counter + 2);
 }
 
-.common-l-hg-loop-2(14);
+.l-hg-loop-2(14);

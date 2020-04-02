@@ -1,24 +1,22 @@
-
 // position: left, top, bottom, right
-
-.common-pos(@length) {
-    .l-@{length} {
-        left: unit(@length, px) !important;
-    }
-    .r-@{length} {
-        right: unit(@length, px) !important;
-    }
-    .t-@{length} {
-        top: unit(@length, px) !important;
-    }
-    .b-@{length} {
-        bottom: unit(@length, px) !important;
-    }
+.pos(@length) {
+  .l-@{length} {
+    left: unit(@length, px) !important;
+  }
+  .r-@{length} {
+    right: unit(@length, px) !important;
+  }
+  .t-@{length} {
+    top: unit(@length, px) !important;
+  }
+  .b-@{length} {
+    bottom: unit(@length, px) !important;
+  }
 }
 
-.common-pos-loop(@counter) when (@counter <= 20) {
-    .common-pos(@counter);
-    .common-pos-loop(@counter + 5);
+.pos-loop(@counter) when (@counter <= 20) {
+  .pos(@counter);
+  .pos-loop(@counter + 5);
 }
 
-.common-pos-loop(0);
+.pos-loop(0);
