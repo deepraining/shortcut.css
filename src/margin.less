@@ -1,23 +1,20 @@
-// 5-60
-.mg(@length) {
-  .mg-@{length} {
-    margin: unit(@length, px);
-  }
-  .mg-t-@{length} {
-    margin-top: unit(@length, px) !important;
-  }
-  .mg-r-@{length} {
-    margin-right: unit(@length, px) !important;
-  }
-  .mg-b-@{length} {
-    margin-bottom: unit(@length, px) !important;
-  }
-  .mg-l-@{length} {
-    margin-left: unit(@length, px) !important;
-  }
-}
+// 5-60px
 .mg-loop(@counter) when (@counter <= 60) {
-  .mg(@counter);
+  .mg-@{counter} {
+    margin: unit(@counter, px);
+  }
+  .mg-t-@{counter} {
+    margin-top: unit(@counter, px) !important;
+  }
+  .mg-r-@{counter} {
+    margin-right: unit(@counter, px) !important;
+  }
+  .mg-b-@{counter} {
+    margin-bottom: unit(@counter, px) !important;
+  }
+  .mg-l-@{counter} {
+    margin-left: unit(@counter, px) !important;
+  }
   .mg-loop(@counter + 5);
 }
 .mg-loop(5);
@@ -55,3 +52,44 @@
 .mg-l-auto {
   margin-left: auto !important;
 }
+
+// 0.05rem
+.mg-0-05-rem {
+  margin: 0.05rem;
+}
+.mg-t-0-05-rem {
+  margin-top: 0.05rem !important;
+}
+.mg-r-0-05-rem {
+  margin-right: 0.05rem !important;
+}
+.mg-b-0-05-rem {
+  margin-bottom: 0.05rem !important;
+}
+.mg-l-0-05-rem {
+  margin-left: 0.05rem !important;
+}
+
+// 0.1-0.6rem
+.mg-rem-loop(@counter, @times) when (@counter <= 0.6) {
+  @roundCounter: round(@counter, 2);
+  @nameCounter: round(@counter * @times, 2);
+
+  .mg-0-@{nameCounter}-rem {
+    margin: unit(@roundCounter, rem);
+  }
+  .mg-t-0-@{nameCounter}-rem {
+    margin-top: unit(@roundCounter, rem) !important;
+  }
+  .mg-r-0-@{nameCounter}-rem {
+    margin-right: unit(@roundCounter, rem) !important;
+  }
+  .mg-b-0-@{nameCounter}-rem {
+    margin-bottom: unit(@roundCounter, rem) !important;
+  }
+  .mg-l-0-@{nameCounter}-rem {
+    margin-left: unit(@roundCounter, rem) !important;
+  }
+  .mg-rem-loop(@counter + 0.05, 110 - @times);
+}
+.mg-rem-loop(0.1, 10);

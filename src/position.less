@@ -1,34 +1,49 @@
-// 5-20
-.pos(@length) {
-  .l-@{length} {
-    left: unit(@length, px) !important;
-  }
-  .r-@{length} {
-    right: unit(@length, px) !important;
-  }
-  .t-@{length} {
-    top: unit(@length, px) !important;
-  }
-  .b-@{length} {
-    bottom: unit(@length, px) !important;
-  }
-}
+// 5-20px
 .pos-loop(@counter) when (@counter <= 20) {
-  .pos(@counter);
+  .t-@{counter} {
+    top: unit(@counter, px) !important;
+  }
+  .r-@{counter} {
+    right: unit(@counter, px) !important;
+  }
+  .b-@{counter} {
+    bottom: unit(@counter, px) !important;
+  }
+  .l-@{counter} {
+    left: unit(@counter, px) !important;
+  }
   .pos-loop(@counter + 5);
 }
 .pos-loop(5);
 
 // 0
-.l-0 {
-  left: 0 !important;
+.t-0 {
+  top: 0 !important;
 }
 .r-0 {
   right: 0 !important;
 }
-.t-0 {
-  top: 0 !important;
-}
 .b-0 {
   bottom: 0 !important;
 }
+.l-0 {
+  left: 0 !important;
+}
+
+// 0.1-0.2rem
+.pos-rem-loop(@counter) when (@counter <= 20) {
+  .t-0-@{counter}-rem {
+    top: unit(@counter / 100, rem) !important;
+  }
+  .r-0-@{counter}-rem {
+    right: unit(@counter / 100, rem) !important;
+  }
+  .b-0-@{counter}-rem {
+    bottom: unit(@counter / 100, rem) !important;
+  }
+  .l-0-@{counter}-rem {
+    left: unit(@counter / 100, rem) !important;
+  }
+  .pos-rem-loop(@counter + 5);
+}
+.pos-rem-loop(10);

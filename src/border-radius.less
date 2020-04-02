@@ -1,43 +1,26 @@
-// 2-20
-.bd-rd(@length) {
-  .bd-rd-@{length} {
-    border-radius: unit(@length, px);
-  }
-  .bd-rd-t-l-@{length} {
-    border-top-left-radius: unit(@length, px) !important;
-  }
-  .bd-rd-t-r-@{length} {
-    border-top-right-radius: unit(@length, px) !important;
-  }
-  .bd-rd-b-l-@{length} {
-    border-bottom-left-radius: unit(@length, px) !important;
-  }
-  .bd-rd-b-r-@{length} {
-    border-bottom-right-radius: unit(@length, px) !important;
-  }
-}
+// 0-20
 .bd-rd-loop(@counter) when (@counter <= 20) {
-  .bd-rd(@counter);
+  @radius: if(@counter > 0, unit(@counter, px), 0);
+  @radiusImportant: @radius !important;
+
+  .bd-rd-@{counter} {
+    border-radius: @radius;
+  }
+  .bd-rd-t-l-@{counter} {
+    border-top-left-radius: @radiusImportant;
+  }
+  .bd-rd-t-r-@{counter} {
+    border-top-right-radius: @radiusImportant;
+  }
+  .bd-rd-b-l-@{counter} {
+    border-bottom-left-radius: @radiusImportant;
+  }
+  .bd-rd-b-r-@{counter} {
+    border-bottom-right-radius: @radiusImportant;
+  }
   .bd-rd-loop(@counter + 2);
 }
-.bd-rd-loop(2);
-
-// 0
-.bd-rd-0 {
-  border-radius: 0;
-}
-.bd-rd-t-l-0 {
-  border-top-left-radius: 0 !important;
-}
-.bd-rd-t-r-0 {
-  border-top-right-radius: 0 !important;
-}
-.bd-rd-b-l-0 {
-  border-bottom-left-radius: 0 !important;
-}
-.bd-rd-b-r-0 {
-  border-bottom-right-radius: 0 !important;
-}
+.bd-rd-loop(0);
 
 // 50%
 .bd-rd-50-pc {

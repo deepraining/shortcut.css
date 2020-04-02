@@ -1,10 +1,6 @@
-.f-s(@size) {
-  font-size: unit(@size, px);
-}
-
 .f-s-loop(@counter) when (@counter =< 20) {
   .f-s-@{counter} {
-    .f-s(@counter);
+    font-size: unit(@counter, px);
   }
   .f-s-loop(@counter + 1);
 }
@@ -14,7 +10,6 @@
 .f-wg-bold {
   font-weight: bold;
 }
-
 .f-wg-normal {
   font-weight: normal !important;
 }

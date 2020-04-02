@@ -1,44 +1,38 @@
-@border-base: 1px solid;
+.bd(@name, @color) {
+  @border: 1px solid @color;
+  @borderImportant: @border !important;
 
-@border-0: @border-base #000000;
-@border-3: @border-base #333333;
-@border-6: @border-base #666666;
-@border-9: @border-base #999999;
-@border-a: @border-base #aaaaaa;
-@border-b: @border-base #bbbbbb;
-@border-c: @border-base #cccccc;
-@border-d: @border-base #dddddd;
-@border-e: @border-base #eeeeee;
-@border-f: @border-base #ffffff;
-
-.bd(@color, @border) {
-  .bd-@{color} {
+  .bd-@{name} {
     border: @border;
   }
-  .bd-t-@{color} {
-    border-top: @border !important;
+  .bd-t-@{name} {
+    border-top: @borderImportant;
   }
-  .bd-r-@{color} {
-    border-right: @border !important;
+  .bd-r-@{name} {
+    border-right: @borderImportant;
   }
-  .bd-b-@{color} {
-    border-bottom: @border !important;
+  .bd-b-@{name} {
+    border-bottom: @borderImportant;
   }
-  .bd-l-@{color} {
-    border-left: @border !important;
+  .bd-l-@{name} {
+    border-left: @borderImportant;
   }
 }
 
-.bd(0, @border-0);
-.bd(3, @border-3);
-.bd(6, @border-6);
-.bd(9, @border-9);
-.bd(a, @border-a);
-.bd(b, @border-b);
-.bd(c, @border-c);
-.bd(d, @border-d);
-.bd(e, @border-e);
-.bd(f, @border-f);
+.bd(0, color('#000000'));
+.bd(3, color('#333333'));
+.bd(4, color('#444444'));
+.bd(5, color('#555555'));
+.bd(6, color('#666666'));
+.bd(7, color('#777777'));
+.bd(8, color('#888888'));
+.bd(9, color('#999999'));
+.bd(a, color('#aaaaaa'));
+.bd(b, color('#bbbbbb'));
+.bd(c, color('#cccccc'));
+.bd(d, color('#dddddd'));
+.bd(e, color('#eeeeee'));
+.bd(f, color('#ffffff'));
 
 // none
 .bd-none {
