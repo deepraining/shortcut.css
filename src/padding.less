@@ -1,3 +1,4 @@
+// 5-60
 .pd(@length) {
   .pd-@{length} {
     padding: unit(@length, px);
@@ -5,20 +6,35 @@
   .pd-t-@{length} {
     padding-top: unit(@length, px) !important;
   }
-  .pd-l-@{length} {
-    padding-left: unit(@length, px) !important;
-  }
   .pd-r-@{length} {
     padding-right: unit(@length, px) !important;
   }
   .pd-b-@{length} {
     padding-bottom: unit(@length, px) !important;
   }
+  .pd-l-@{length} {
+    padding-left: unit(@length, px) !important;
+  }
 }
-
 .pd-loop(@counter) when (@counter <= 60) {
   .pd(@counter);
   .pd-loop(@counter + 5);
 }
+.pd-loop(5);
 
-.pd-loop(0);
+// 0
+.pd-0 {
+  padding: 0;
+}
+.pd-t-0 {
+  padding-top: 0 !important;
+}
+.pd-r-0 {
+  padding-right: 0 !important;
+}
+.pd-b-0 {
+  padding-bottom: 0 !important;
+}
+.pd-l-0 {
+  padding-left: 0 !important;
+}

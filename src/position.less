@@ -1,4 +1,4 @@
-// position: left, top, bottom, right
+// 5-20
 .pos(@length) {
   .l-@{length} {
     left: unit(@length, px) !important;
@@ -13,10 +13,22 @@
     bottom: unit(@length, px) !important;
   }
 }
-
 .pos-loop(@counter) when (@counter <= 20) {
   .pos(@counter);
   .pos-loop(@counter + 5);
 }
+.pos-loop(5);
 
-.pos-loop(0);
+// 0
+.l-0 {
+  left: 0 !important;
+}
+.r-0 {
+  right: 0 !important;
+}
+.t-0 {
+  top: 0 !important;
+}
+.b-0 {
+  bottom: 0 !important;
+}

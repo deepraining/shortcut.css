@@ -15,9 +15,6 @@
   .bd-@{color} {
     border: @border;
   }
-  .bd-l-@{color} {
-    border-left: @border !important;
-  }
   .bd-t-@{color} {
     border-top: @border !important;
   }
@@ -26,6 +23,9 @@
   }
   .bd-b-@{color} {
     border-bottom: @border !important;
+  }
+  .bd-l-@{color} {
+    border-left: @border !important;
   }
 }
 
@@ -40,23 +40,19 @@
 .bd(e, @border-e);
 .bd(f, @border-f);
 
-// border: none
+// none
 .bd-none {
   border: none;
 }
-
 .bd-l-none {
   border-left: none !important;
 }
-
 .bd-t-none {
   border-top: none !important;
 }
-
 .bd-r-none {
   border-right: none !important;
 }
-
 .bd-b-none {
   border-bottom: none !important;
 }

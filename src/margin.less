@@ -1,3 +1,4 @@
+// 5-60
 .mg(@length) {
   .mg-@{length} {
     margin: unit(@length, px);
@@ -5,40 +6,52 @@
   .mg-t-@{length} {
     margin-top: unit(@length, px) !important;
   }
-  .mg-l-@{length} {
-    margin-left: unit(@length, px) !important;
-  }
   .mg-r-@{length} {
     margin-right: unit(@length, px) !important;
   }
   .mg-b-@{length} {
     margin-bottom: unit(@length, px) !important;
   }
+  .mg-l-@{length} {
+    margin-left: unit(@length, px) !important;
+  }
 }
-
 .mg-loop(@counter) when (@counter <= 60) {
   .mg(@counter);
   .mg-loop(@counter + 5);
 }
+.mg-loop(5);
 
-.mg-loop(0);
+// 0
+.mg-0 {
+  margin: 0;
+}
+.mg-t-0 {
+  margin-top: 0 !important;
+}
+.mg-r-0 {
+  margin-right: 0 !important;
+}
+.mg-b-0 {
+  margin-bottom: 0 !important;
+}
+.mg-l-0 {
+  margin-left: 0 !important;
+}
 
+// auto
 .mg-auto {
   margin: auto;
 }
-
 .mg-t-auto {
   margin-top: auto !important;
 }
-
-.mg-l-auto {
-  margin-left: auto !important;
-}
-
 .mg-r-auto {
   margin-right: auto !important;
 }
-
 .mg-b-auto {
   margin-bottom: auto !important;
+}
+.mg-l-auto {
+  margin-left: auto !important;
 }
