@@ -1,39 +1,43 @@
 // 5-60px
 .pd-loop(@counter) when (@counter <= 60) {
+  @val: if(@counter > 0, unit(@counter, px), 0);
+  @valImportant: @val !important;
+
   .pd-@{counter} {
-    padding: unit(@counter, px);
+    padding: @val;
   }
   .pd-t-@{counter} {
-    padding-top: unit(@counter, px) !important;
+    padding-top: @valImportant;
   }
   .pd-r-@{counter} {
-    padding-right: unit(@counter, px) !important;
+    padding-right: @valImportant;
   }
   .pd-b-@{counter} {
-    padding-bottom: unit(@counter, px) !important;
+    padding-bottom: @valImportant;
   }
   .pd-l-@{counter} {
-    padding-left: unit(@counter, px) !important;
+    padding-left: @valImportant;
   }
+
   .pd-loop(@counter + 5);
 }
-.pd-loop(5);
+.pd-loop(0);
 
-// 0
-.pd-0 {
-  padding: 0;
+// auto
+.pd-auto {
+  padding: auto;
 }
-.pd-t-0 {
-  padding-top: 0 !important;
+.pd-t-auto {
+  padding-top: auto !important;
 }
-.pd-r-0 {
-  padding-right: 0 !important;
+.pd-r-auto {
+  padding-right: auto !important;
 }
-.pd-b-0 {
-  padding-bottom: 0 !important;
+.pd-b-auto {
+  padding-bottom: auto !important;
 }
-.pd-l-0 {
-  padding-left: 0 !important;
+.pd-l-auto {
+  padding-left: auto !important;
 }
 
 // 0.05rem
@@ -54,25 +58,27 @@
 }
 
 // 0.1-0.6rem
-.pd-rem-loop(@counter, @times) when (@counter <= 0.6) {
-  @roundCounter: round(@counter, 2);
-  @nameCounter: round(@counter * @times, 2);
+.pd-rem-loop(@counter) when (@counter <= 60) {
+  @val: unit(@counter / 100, rem);
+  @valImportant: @val !important;
+  @name: if(mod(@counter, 10) > 0, @counter, @counter / 10);
 
-  .pd-0-@{nameCounter}-rem {
-    padding: unit(@roundCounter, rem);
+  .pd-0-@{name}-rem {
+    padding: @val;
   }
-  .pd-t-0-@{nameCounter}-rem {
-    padding-top: unit(@roundCounter, rem) !important;
+  .pd-t-0-@{name}-rem {
+    padding-top: @valImportant;
   }
-  .pd-r-0-@{nameCounter}-rem {
-    padding-right: unit(@roundCounter, rem) !important;
+  .pd-r-0-@{name}-rem {
+    padding-right: @valImportant;
   }
-  .pd-b-0-@{nameCounter}-rem {
-    padding-bottom: unit(@roundCounter, rem) !important;
+  .pd-b-0-@{name}-rem {
+    padding-bottom: @valImportant;
   }
-  .pd-l-0-@{nameCounter}-rem {
-    padding-left: unit(@roundCounter, rem) !important;
+  .pd-l-0-@{name}-rem {
+    padding-left: @valImportant;
   }
-  .pd-rem-loop(@counter + 0.05, 110 - @times);
+
+  .pd-rem-loop(@counter + 5);
 }
-.pd-rem-loop(0.1, 10);
+.pd-rem-loop(10);

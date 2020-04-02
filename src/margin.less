@@ -1,40 +1,27 @@
 // 5-60px
 .mg-loop(@counter) when (@counter <= 60) {
+  @val: if(@counter > 0, unit(@counter, px), 0);
+  @valImportant: @val !important;
+
   .mg-@{counter} {
-    margin: unit(@counter, px);
+    margin: @val;
   }
   .mg-t-@{counter} {
-    margin-top: unit(@counter, px) !important;
+    margin-top: @valImportant;
   }
   .mg-r-@{counter} {
-    margin-right: unit(@counter, px) !important;
+    margin-right: @valImportant;
   }
   .mg-b-@{counter} {
-    margin-bottom: unit(@counter, px) !important;
+    margin-bottom: @valImportant;
   }
   .mg-l-@{counter} {
-    margin-left: unit(@counter, px) !important;
+    margin-left: @valImportant;
   }
+
   .mg-loop(@counter + 5);
 }
-.mg-loop(5);
-
-// 0
-.mg-0 {
-  margin: 0;
-}
-.mg-t-0 {
-  margin-top: 0 !important;
-}
-.mg-r-0 {
-  margin-right: 0 !important;
-}
-.mg-b-0 {
-  margin-bottom: 0 !important;
-}
-.mg-l-0 {
-  margin-left: 0 !important;
-}
+.mg-loop(0);
 
 // auto
 .mg-auto {
@@ -71,25 +58,27 @@
 }
 
 // 0.1-0.6rem
-.mg-rem-loop(@counter, @times) when (@counter <= 0.6) {
-  @roundCounter: round(@counter, 2);
-  @nameCounter: round(@counter * @times, 2);
+.mg-rem-loop(@counter) when (@counter <= 60) {
+  @val: unit(@counter / 100, rem);
+  @valImportant: @val !important;
+  @name: if(mod(@counter, 10) > 0, @counter, @counter / 10);
 
-  .mg-0-@{nameCounter}-rem {
-    margin: unit(@roundCounter, rem);
+  .mg-0-@{name}-rem {
+    margin: @val;
   }
-  .mg-t-0-@{nameCounter}-rem {
-    margin-top: unit(@roundCounter, rem) !important;
+  .mg-t-0-@{name}-rem {
+    margin-top: @valImportant;
   }
-  .mg-r-0-@{nameCounter}-rem {
-    margin-right: unit(@roundCounter, rem) !important;
+  .mg-r-0-@{name}-rem {
+    margin-right: @valImportant;
   }
-  .mg-b-0-@{nameCounter}-rem {
-    margin-bottom: unit(@roundCounter, rem) !important;
+  .mg-b-0-@{name}-rem {
+    margin-bottom: @valImportant;
   }
-  .mg-l-0-@{nameCounter}-rem {
-    margin-left: unit(@roundCounter, rem) !important;
+  .mg-l-0-@{name}-rem {
+    margin-left: @valImportant;
   }
-  .mg-rem-loop(@counter + 0.05, 110 - @times);
+
+  .mg-rem-loop(@counter + 5);
 }
-.mg-rem-loop(0.1, 10);
+.mg-rem-loop(10);

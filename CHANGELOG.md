@@ -2,6 +2,7 @@
 
 ## 0.1.1
 
+- Add `rem` support.
 - Add `.text-ellipsis`.
 
 ## 0.1.0 [2018-10-31]

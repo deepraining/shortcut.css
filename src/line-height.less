@@ -6,6 +6,7 @@
   .l-hg-1-@{counter} {
     line-height: 1 + @counter / 10;
   }
+
   .l-hg-loop(@counter + 1);
 }
 .l-hg-loop(1);
@@ -14,11 +15,24 @@
   line-height: 2;
 }
 
+// 14-50px
 .l-hg-loop-2(@counter) when (@counter =< 50) {
   .l-hg-@{counter} {
     line-height: unit(@counter, px);
   }
+
   .l-hg-loop-2(@counter + 2);
 }
-
 .l-hg-loop-2(14);
+
+// 0.14-0.5rem
+.l-hg-rem-loop(@counter) when (@counter =< 50) {
+  @name: if(mod(@counter, 10) > 0, @counter, @counter / 10);
+
+  .l-hg-0-@{name}-rem {
+    line-height: unit(@counter / 100, rem);
+  }
+
+  .l-hg-rem-loop(@counter + 2);
+}
+.l-hg-rem-loop(14);

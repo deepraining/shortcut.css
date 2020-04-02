@@ -1,23 +1,24 @@
-// 0-20
+// 0-20px
 .bd-rd-loop(@counter) when (@counter <= 20) {
-  @radius: if(@counter > 0, unit(@counter, px), 0);
-  @radiusImportant: @radius !important;
+  @val: if(@counter > 0, unit(@counter, px), 0);
+  @valImportant: @val !important;
 
   .bd-rd-@{counter} {
-    border-radius: @radius;
+    border-radius: @val;
   }
   .bd-rd-t-l-@{counter} {
-    border-top-left-radius: @radiusImportant;
+    border-top-left-radius: @valImportant;
   }
   .bd-rd-t-r-@{counter} {
-    border-top-right-radius: @radiusImportant;
+    border-top-right-radius: @valImportant;
   }
   .bd-rd-b-l-@{counter} {
-    border-bottom-left-radius: @radiusImportant;
+    border-bottom-left-radius: @valImportant;
   }
   .bd-rd-b-r-@{counter} {
-    border-bottom-right-radius: @radiusImportant;
+    border-bottom-right-radius: @valImportant;
   }
+
   .bd-rd-loop(@counter + 2);
 }
 .bd-rd-loop(0);
@@ -38,3 +39,54 @@
 .bd-rd-b-r-50-pc {
   border-bottom-right-radius: 50% !important;
 }
+
+// 0.02-0.08rem
+.bd-rd-rem-loop-1(@counter) when (@counter <= 8) {
+  @val: unit(@counter / 100, rem);
+  @valImportant: @val !important;
+
+  .bd-rd-0-0@{counter}-rem {
+    border-radius: @val;
+  }
+  .bd-rd-t-l-0-0@{counter}-rem {
+    border-top-left-radius: @valImportant;
+  }
+  .bd-rd-t-r-0-0@{counter}-rem {
+    border-top-right-radius: @valImportant;
+  }
+  .bd-rd-b-l-0-0@{counter}-rem {
+    border-bottom-left-radius: @valImportant;
+  }
+  .bd-rd-b-r-0-0@{counter}-rem {
+    border-bottom-right-radius: @valImportant;
+  }
+
+  .bd-rd-rem-loop-1(@counter + 2);
+}
+.bd-rd-rem-loop-1(2);
+
+// 0.1-0.2rem
+.bd-rd-rem-loop-2(@counter) when (@counter <= 20) {
+  @val: unit(@counter / 100, rem);
+  @valImportant: @val !important;
+  @name: if(mod(@counter, 10) > 0, @counter, @counter / 10);
+
+  .bd-rd-0-@{name}-rem {
+    border-radius: @val;
+  }
+  .bd-rd-t-l-0-@{name}-rem {
+    border-top-left-radius: @valImportant;
+  }
+  .bd-rd-t-r-0-@{name}-rem {
+    border-top-right-radius: @valImportant;
+  }
+  .bd-rd-b-l-0-@{name}-rem {
+    border-bottom-left-radius: @valImportant;
+  }
+  .bd-rd-b-r-0-@{name}-rem {
+    border-bottom-right-radius: @valImportant;
+  }
+
+  .bd-rd-rem-loop-2(@counter + 2);
+}
+.bd-rd-rem-loop-2(10);

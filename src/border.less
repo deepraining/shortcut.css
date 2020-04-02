@@ -1,38 +1,38 @@
 .bd(@name, @color) {
-  @border: 1px solid @color;
-  @borderImportant: @border !important;
+  @val: 1px solid @color;
+  @valImportant: @val !important;
 
   .bd-@{name} {
-    border: @border;
+    border: @val;
   }
   .bd-t-@{name} {
-    border-top: @borderImportant;
+    border-top: @valImportant;
   }
   .bd-r-@{name} {
-    border-right: @borderImportant;
+    border-right: @valImportant;
   }
   .bd-b-@{name} {
-    border-bottom: @borderImportant;
+    border-bottom: @valImportant;
   }
   .bd-l-@{name} {
-    border-left: @borderImportant;
+    border-left: @valImportant;
   }
 }
 
-.bd(0, color('#000000'));
-.bd(3, color('#333333'));
-.bd(4, color('#444444'));
-.bd(5, color('#555555'));
-.bd(6, color('#666666'));
-.bd(7, color('#777777'));
-.bd(8, color('#888888'));
-.bd(9, color('#999999'));
-.bd(a, color('#aaaaaa'));
-.bd(b, color('#bbbbbb'));
-.bd(c, color('#cccccc'));
-.bd(d, color('#dddddd'));
-.bd(e, color('#eeeeee'));
-.bd(f, color('#ffffff'));
+.bd(0, #000000);
+.bd(3, #333333);
+.bd(4, #444444);
+.bd(5, #555555);
+.bd(6, #666666);
+.bd(7, #777777);
+.bd(8, #888888);
+.bd(9, #999999);
+.bd(a, #aaaaaa);
+.bd(b, #bbbbbb);
+.bd(c, #cccccc);
+.bd(d, #dddddd);
+.bd(e, #eeeeee);
+.bd(f, #ffffff);
 
 // none
 .bd-none {

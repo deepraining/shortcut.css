@@ -27,6 +27,7 @@ import '@senntyou/shortcut.css';
 ## 特殊单位
 
 - `pc -> %`
+- `rem -> rem`
 
 ## 缩写
 

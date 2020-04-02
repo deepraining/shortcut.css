@@ -3,6 +3,7 @@
   .hg-@{counter} {
     height: unit(@counter, px);
   }
+
   .hg-loop(@counter + 10);
 }
 .hg-loop(10);
@@ -12,6 +13,7 @@
   .hg-@{counter}-pc {
     height: unit(@counter, %);
   }
+
   .hg-pc-loop(@counter + 5);
 }
 .hg-pc-loop(5);
@@ -21,23 +23,25 @@
   .hg-0-@{counter}-rem {
     height: unit(@counter / 10, rem);
   }
+
   .hg-rem-loop-1(@counter + 1);
 }
 .hg-rem-loop-1(1);
+
+// 1rem
+.hg-1-rem {
+  height: 1rem;
+}
 
 // 1.1-1.9rem
 .hg-rem-loop-2(@counter) when (@counter <= 9) {
   .hg-1-@{counter}-rem {
     height: unit(1 + @counter / 10, rem);
   }
+
   .hg-rem-loop-2(@counter + 1);
 }
 .hg-rem-loop-2(1);
-
-// 1rem
-.hg-1-rem {
-  height: 1rem;
-}
 
 // 2rem
 .hg-2-rem {

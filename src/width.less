@@ -3,6 +3,7 @@
   .wd-@{counter} {
     width: unit(@counter, px);
   }
+
   .wd-loop(@counter + 10);
 }
 .wd-loop(10);
@@ -12,6 +13,7 @@
   .wd-@{counter}-pc {
     width: unit(@counter, %);
   }
+
   .wd-pc-loop(@counter + 5);
 }
 .wd-pc-loop(5);
@@ -21,23 +23,25 @@
   .wd-0-@{counter}-rem {
     width: unit(@counter / 10, rem);
   }
+
   .wd-rem-loop-1(@counter + 1);
 }
 .wd-rem-loop-1(1);
+
+// 1rem
+.wd-1-rem {
+  width: 1rem;
+}
 
 // 1.1-1.9rem
 .wd-rem-loop-2(@counter) when (@counter <= 9) {
   .wd-1-@{counter}-rem {
     width: unit(1 + @counter / 10, rem);
   }
+
   .wd-rem-loop-2(@counter + 1);
 }
 .wd-rem-loop-2(1);
-
-// 1rem
-.wd-1-rem {
-  width: 1rem;
-}
 
 // 2rem
 .wd-2-rem {
