@@ -1,0 +1,19 @@
+// 20-400rpx
+.wd-loop(@counter) when (@counter <= 400) {
+  .wd-@{counter} {
+    width: unit(@counter, rpx);
+  }
+
+  .wd-loop(@counter + 20);
+}
+.wd-loop(20);
+
+// 5-100%
+.wd-pc-loop(@counter) when (@counter <= 100) {
+  .wd-@{counter}-pc {
+    width: unit(@counter, %);
+  }
+
+  .wd-pc-loop(@counter + 5);
+}
+.wd-pc-loop(5);

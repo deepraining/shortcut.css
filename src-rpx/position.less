@@ -1,0 +1,21 @@
+// 10-40rpx
+.pos-loop(@counter) when (@counter <= 40) {
+  @val: if(@counter > 0, unit(@counter, rpx), 0);
+  @valImportant: @val !important;
+
+  .t-@{counter} {
+    top: @valImportant;
+  }
+  .r-@{counter} {
+    right: @valImportant;
+  }
+  .b-@{counter} {
+    bottom: @valImportant;
+  }
+  .l-@{counter} {
+    left: @valImportant;
+  }
+
+  .pos-loop(@counter + 10);
+}
+.pos-loop(0);

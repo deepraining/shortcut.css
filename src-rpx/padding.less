@@ -1,0 +1,41 @@
+// 10-120rpx
+.pd-loop(@counter) when (@counter <= 120) {
+  @val: if(@counter > 0, unit(@counter, rpx), 0);
+  @valImportant: @val !important;
+
+  .pd-@{counter} {
+    padding: @val;
+  }
+  .pd-t-@{counter} {
+    padding-top: @valImportant;
+  }
+  .pd-r-@{counter} {
+    padding-right: @valImportant;
+  }
+  .pd-b-@{counter} {
+    padding-bottom: @valImportant;
+  }
+  .pd-l-@{counter} {
+    padding-left: @valImportant;
+  }
+
+  .pd-loop(@counter + 10);
+}
+.pd-loop(0);
+
+// auto
+.pd-auto {
+  padding: auto;
+}
+.pd-t-auto {
+  padding-top: auto !important;
+}
+.pd-r-auto {
+  padding-right: auto !important;
+}
+.pd-b-auto {
+  padding-bottom: auto !important;
+}
+.pd-l-auto {
+  padding-left: auto !important;
+}

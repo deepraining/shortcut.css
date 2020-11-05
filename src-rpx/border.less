@@ -1,0 +1,52 @@
+.bd(@name, @color) {
+  @val: 2rpx solid @color;
+  @valImportant: @val !important;
+
+  .bd-@{name} {
+    border: @val;
+  }
+  .bd-t-@{name} {
+    border-top: @valImportant;
+  }
+  .bd-r-@{name} {
+    border-right: @valImportant;
+  }
+  .bd-b-@{name} {
+    border-bottom: @valImportant;
+  }
+  .bd-l-@{name} {
+    border-left: @valImportant;
+  }
+}
+
+.bd(0, #000000);
+.bd(3, #333333);
+.bd(4, #444444);
+.bd(5, #555555);
+.bd(6, #666666);
+.bd(7, #777777);
+.bd(8, #888888);
+.bd(9, #999999);
+.bd(a, #aaaaaa);
+.bd(b, #bbbbbb);
+.bd(c, #cccccc);
+.bd(d, #dddddd);
+.bd(e, #eeeeee);
+.bd(f, #ffffff);
+
+// none
+.bd-none {
+  border: none;
+}
+.bd-l-none {
+  border-left: none !important;
+}
+.bd-t-none {
+  border-top: none !important;
+}
+.bd-r-none {
+  border-right: none !important;
+}
+.bd-b-none {
+  border-bottom: none !important;
+}

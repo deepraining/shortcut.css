@@ -15,6 +15,14 @@ import '@senntyou/shortcut.css';
 - [less 源代码](./src/index.less)
 - [css 代码](./lib/shortcut.css)
 
+```
+// 如果需要以 rpx 单位的样式，需要这样导入
+import '@senntyou/shortcut.css/lib/shortcut.rpx.css';
+```
+
+- [rpx less 源代码](./src-rpx/index.less)
+- [rpx css 代码](./lib/shortcut.rpx.css)
+
 ## 类名规则
 
 1. 用 `-` 链接属性与值, 如果属性中已有 `-`, 则保留: `mg-l-10 -> margin-left: 10px`

@@ -1,0 +1,17 @@
+// 16-40rpx
+.f-s-loop(@counter) when (@counter =< 40) {
+  .f-s-@{counter} {
+    font-size: unit(@counter, rpx);
+  }
+
+  .f-s-loop(@counter + 2);
+}
+.f-s-loop(16);
+
+// font-weight
+.f-wg-bold {
+  font-weight: bold;
+}
+.f-wg-normal {
+  font-weight: normal !important;
+}

@@ -1,0 +1,26 @@
+.l-hg-1 {
+  line-height: 1;
+}
+
+.l-hg-loop(@counter) when (@counter =< 9) {
+  .l-hg-1-@{counter} {
+    line-height: 1 + @counter / 10;
+  }
+
+  .l-hg-loop(@counter + 1);
+}
+.l-hg-loop(1);
+
+.l-hg-2 {
+  line-height: 2;
+}
+
+// 28-100rpx
+.l-hg-loop-2(@counter) when (@counter =< 50) {
+  .l-hg-@{counter} {
+    line-height: unit(@counter, rpx);
+  }
+
+  .l-hg-loop-2(@counter + 4);
+}
+.l-hg-loop-2(28);

@@ -1,0 +1,19 @@
+// 20-400rpx
+.hg-loop(@counter) when (@counter <= 400) {
+  .hg-@{counter} {
+    height: unit(@counter, rpx);
+  }
+
+  .hg-loop(@counter + 20);
+}
+.hg-loop(20);
+
+// 5-100%
+.hg-pc-loop(@counter) when (@counter <= 100) {
+  .hg-@{counter}-pc {
+    height: unit(@counter, %);
+  }
+
+  .hg-pc-loop(@counter + 5);
+}
+.hg-pc-loop(5);

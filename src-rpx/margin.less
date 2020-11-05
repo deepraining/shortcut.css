@@ -1,0 +1,41 @@
+// 10-120rpx
+.mg-loop(@counter) when (@counter <= 120) {
+  @val: if(@counter > 0, unit(@counter, rpx), 0);
+  @valImportant: @val !important;
+
+  .mg-@{counter} {
+    margin: @val;
+  }
+  .mg-t-@{counter} {
+    margin-top: @valImportant;
+  }
+  .mg-r-@{counter} {
+    margin-right: @valImportant;
+  }
+  .mg-b-@{counter} {
+    margin-bottom: @valImportant;
+  }
+  .mg-l-@{counter} {
+    margin-left: @valImportant;
+  }
+
+  .mg-loop(@counter + 10);
+}
+.mg-loop(0);
+
+// auto
+.mg-auto {
+  margin: auto;
+}
+.mg-t-auto {
+  margin-top: auto !important;
+}
+.mg-r-auto {
+  margin-right: auto !important;
+}
+.mg-b-auto {
+  margin-bottom: auto !important;
+}
+.mg-l-auto {
+  margin-left: auto !important;
+}

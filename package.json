@@ -1,6 +1,6 @@
 {
   "name": "@senntyou/shortcut.css",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "main": "lib/shortcut.css",
   "description": "A commonly used styles collection, margin, padding, border, width, height, font ...",
   "repository": {
@@ -32,7 +32,7 @@
     "stylelint": "stylelint \"./**/*.{css,less,scss,sass}\"",
     "stylelint:fix": "stylelint \"./**/*.{css,less,scss,sass}\" --fix",
     "lint-staged": "lint-staged",
-    "build": "lessc src/index.less lib/shortcut.css",
+    "build": "lessc src/index.less lib/shortcut.css && lessc src-rpx/index.less lib/shortcut.rpx.css",
     "prepublishOnly": "npm run build",
     "pretest": "npm run build",
     "test": "jest test",
