@@ -1,0 +1,18 @@
+// 0.28-0.96rem
+.l-hg-loop-2(@counter) when (@counter =< 96) {
+  @name: if(mod(@counter, 10) > 0, @counter, @counter / 10);
+
+  .l-hg-0-@{name}-rem,
+  .lhg-0@{name}r {
+    line-height: unit(@counter / 100, rem);
+  }
+
+  .l-hg-loop-2(@counter + 4);
+}
+.l-hg-loop-2(28);
+
+// 1rem
+.l-hg-1-rem,
+.lhg-1r {
+  line-height: 1rem;
+}

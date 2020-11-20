@@ -6,16 +6,20 @@
   .pd-@{counter} {
     padding: @val;
   }
-  .pd-t-@{counter} {
+  .pd-t-@{counter},
+  .pdt-@{counter} {
     padding-top: @valImportant;
   }
-  .pd-r-@{counter} {
+  .pd-r-@{counter},
+  .pdr-@{counter} {
     padding-right: @valImportant;
   }
-  .pd-b-@{counter} {
+  .pd-b-@{counter},
+  .pdb-@{counter} {
     padding-bottom: @valImportant;
   }
-  .pd-l-@{counter} {
+  .pd-l-@{counter},
+  .pdl-@{counter} {
     padding-left: @valImportant;
   }
 
@@ -24,18 +28,23 @@
 .pd-loop(0);
 
 // auto
-.pd-auto {
+.pd-auto,
+.pd-a {
   padding: auto;
 }
-.pd-t-auto {
+.pd-t-auto,
+.pdt-a {
   padding-top: auto !important;
 }
-.pd-r-auto {
+.pd-r-auto,
+.pdr-a {
   padding-right: auto !important;
 }
-.pd-b-auto {
+.pd-b-auto,
+.pdb-a {
   padding-bottom: auto !important;
 }
-.pd-l-auto {
+.pd-l-auto,
+.pdl-a {
   padding-left: auto !important;
 }

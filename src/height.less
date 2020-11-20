@@ -10,40 +10,11 @@
 
 // 5-100%
 .hg-pc-loop(@counter) when (@counter <= 100) {
-  .hg-@{counter}-pc {
+  .hg-@{counter}-pc,
+  .hg-@{counter}p {
     height: unit(@counter, %);
   }
 
   .hg-pc-loop(@counter + 5);
 }
 .hg-pc-loop(5);
-
-// 0.1-0.9rem
-.hg-rem-loop-1(@counter) when (@counter <= 9) {
-  .hg-0-@{counter}-rem {
-    height: unit(@counter / 10, rem);
-  }
-
-  .hg-rem-loop-1(@counter + 1);
-}
-.hg-rem-loop-1(1);
-
-// 1rem
-.hg-1-rem {
-  height: 1rem;
-}
-
-// 1.1-1.9rem
-.hg-rem-loop-2(@counter) when (@counter <= 9) {
-  .hg-1-@{counter}-rem {
-    height: unit(1 + @counter / 10, rem);
-  }
-
-  .hg-rem-loop-2(@counter + 1);
-}
-.hg-rem-loop-2(1);
-
-// 2rem
-.hg-2-rem {
-  height: 2rem;
-}

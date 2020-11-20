@@ -10,7 +10,8 @@
 
 // 5-100%
 .wd-pc-loop(@counter) when (@counter <= 100) {
-  .wd-@{counter}-pc {
+  .wd-@{counter}-pc,
+  .wd-@{counter}p {
     width: unit(@counter, %);
   }
 

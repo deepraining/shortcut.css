@@ -6,16 +6,20 @@
   .pd-@{counter} {
     padding: @val;
   }
-  .pd-t-@{counter} {
+  .pd-t-@{counter},
+  .pdt-@{counter} {
     padding-top: @valImportant;
   }
-  .pd-r-@{counter} {
+  .pd-r-@{counter},
+  .pdr-@{counter} {
     padding-right: @valImportant;
   }
-  .pd-b-@{counter} {
+  .pd-b-@{counter},
+  .pdb-@{counter} {
     padding-bottom: @valImportant;
   }
-  .pd-l-@{counter} {
+  .pd-l-@{counter},
+  .pdl-@{counter} {
     padding-left: @valImportant;
   }
 
@@ -24,61 +28,23 @@
 .pd-loop(0);
 
 // auto
-.pd-auto {
+.pd-auto,
+.pd-a {
   padding: auto;
 }
-.pd-t-auto {
+.pd-t-auto,
+.pdt-a {
   padding-top: auto !important;
 }
-.pd-r-auto {
+.pd-r-auto,
+.pdr-a {
   padding-right: auto !important;
 }
-.pd-b-auto {
+.pd-b-auto,
+.pdb-a {
   padding-bottom: auto !important;
 }
-.pd-l-auto {
+.pd-l-auto,
+.pdl-a {
   padding-left: auto !important;
 }
-
-// 0.05rem
-.pd-0-05-rem {
-  padding: 0.05rem;
-}
-.pd-t-0-05-rem {
-  padding-top: 0.05rem !important;
-}
-.pd-r-0-05-rem {
-  padding-right: 0.05rem !important;
-}
-.pd-b-0-05-rem {
-  padding-bottom: 0.05rem !important;
-}
-.pd-l-0-05-rem {
-  padding-left: 0.05rem !important;
-}
-
-// 0.1-0.6rem
-.pd-rem-loop(@counter) when (@counter <= 60) {
-  @val: unit(@counter / 100, rem);
-  @valImportant: @val !important;
-  @name: if(mod(@counter, 10) > 0, @counter, @counter / 10);
-
-  .pd-0-@{name}-rem {
-    padding: @val;
-  }
-  .pd-t-0-@{name}-rem {
-    padding-top: @valImportant;
-  }
-  .pd-r-0-@{name}-rem {
-    padding-right: @valImportant;
-  }
-  .pd-b-0-@{name}-rem {
-    padding-bottom: @valImportant;
-  }
-  .pd-l-0-@{name}-rem {
-    padding-left: @valImportant;
-  }
-
-  .pd-rem-loop(@counter + 5);
-}
-.pd-rem-loop(10);

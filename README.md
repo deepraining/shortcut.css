@@ -1,7 +1,5 @@
 # shortcut.css
 
-[English Documentation](./README.en.md)
-
 一个通用的样式类集合, margin, padding, border, width, height, font ...
 
 ```
@@ -9,19 +7,19 @@ npm install @senntyou/shortcut.css --save
 ```
 
 ```
+# 网页版
 import '@senntyou/shortcut.css';
+
+# 如果需要rem单位(屏宽3.75rem)
+import '@senntyou/shortcut.css/lib/shortcut.3.75rem.css';
+# 如果需要rem单位(屏宽7.50rem)
+import '@senntyou/shortcut.css/lib/shortcut.7.50rem.css';
 ```
 
-- [less 源代码](./src/index.less)
-- [css 代码](./lib/shortcut.css)
-
 ```
-// 如果需要以 rpx 单位的样式，需要这样导入
-import '@senntyou/shortcut.css/lib/shortcut.rpx.css';
+# 小程序(屏宽750rpx)
+import '@senntyou/shortcut.css/lib/shortcut.375rpx.css';
 ```
-
-- [rpx less 源代码](./src-rpx/index.less)
-- [rpx css 代码](./lib/shortcut.rpx.css)
 
 ## 类名规则
 
@@ -32,10 +30,26 @@ import '@senntyou/shortcut.css/lib/shortcut.rpx.css';
 5. 如果值是小数, 则用 `-` 分割开: `l-hg-1-1 -> line-height: 1.1`
 6. 用 `-` 连接特殊单位: `50-pc -> 50%`
 
+## 简化类名规则
+
+在一般的命名规则之上，另加一套简化的命名，比如
+
+```
+margin-top: 20px => mg-t-20 => mgt-20
+margin-left: 10% => mg-l-10-pc => mgl-10p
+padding-right: 0.05rem => pd-r-0-05-rem => pdr-005r
+```
+
+1. 类名中只保留一个 `-`，属性名与属性值中的 `-` 都不保留
+2. 对于 `0.x` 的小数，直接去掉 `.`；而 `1.x, 2.x` 等大于 1 的小数，则用横线代替 `.`
+3. 使用简化单位
+
 ## 特殊单位
 
 - `pc -> %`
+- `p -> %`（简化）
 - `rem -> rem`
+- `r -> rem`（简化）
 
 ## 缩写
 

@@ -1,0 +1,83 @@
+// 0.1-0.9rem
+.pd-loop(@counter) when (@counter <= 90) {
+  @val: unit(@counter / 100, rem);
+  @valImportant: @val !important;
+  @name: if(mod(@counter, 10) > 0, @counter, @counter / 10);
+
+  .pd-0-@{name}-rem,
+  .pd-0@{name}r {
+    padding: @val;
+  }
+  .pd-t-0-@{name}-rem,
+  .pdt-0@{name}r {
+    padding-top: @valImportant;
+  }
+  .pd-r-0-@{name}-rem,
+  .pdr-0@{name}r {
+    padding-right: @valImportant;
+  }
+  .pd-b-0-@{name}-rem,
+  .pdb-0@{name}r {
+    padding-bottom: @valImportant;
+  }
+  .pd-l-0-@{name}-rem,
+  .pdl-0@{name}r {
+    padding-left: @valImportant;
+  }
+
+  .pd-loop(@counter + 10);
+}
+.pd-loop(10);
+
+// 1rem
+.pd-1-rem,
+.pd-1r {
+  padding: 1rem;
+}
+.pd-t-1-rem,
+.pdt-1r {
+  padding-top: 1rem !important;
+}
+.pd-r-1-rem,
+.pdr-1r {
+  padding-right: 1rem !important;
+}
+.pd-b-1-rem,
+.pdb-1r {
+  padding-bottom: 1rem !important;
+}
+.pd-l-1-rem,
+.pdl-1r {
+  padding-left: 1rem !important;
+}
+
+// 1.1-1.2rem
+.pd-loop-2(@counter) when (@counter <= 20) {
+  @val: unit(1 + @counter / 100, rem);
+  @valImportant: @val !important;
+  @name: if(mod(@counter, 10) > 0, @counter, @counter / 10);
+
+  .pd-1-@{name}-rem,
+  .pd-1-@{name}r {
+    padding: @val;
+  }
+  .pd-t-1-@{name}-rem,
+  .pdt-1-@{name}r {
+    padding-top: @valImportant;
+  }
+  .pd-r-1-@{name}-rem,
+  .pdr-1-@{name}r {
+    padding-right: @valImportant;
+  }
+  .pd-b-1-@{name}-rem,
+  .pdb-1-@{name}r {
+    padding-bottom: @valImportant;
+  }
+  .pd-l-1-@{name}-rem,
+  .pdl-1-@{name}r {
+    padding-left: @valImportant;
+  }
+
+  .pd-loop-2(@counter + 10);
+}
+.pd-loop-2(10);

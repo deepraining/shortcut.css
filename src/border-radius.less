@@ -3,19 +3,24 @@
   @val: if(@counter > 0, unit(@counter, px), 0);
   @valImportant: @val !important;
 
-  .bd-rd-@{counter} {
+  .bd-rd-@{counter},
+  .bdrd-@{counter} {
     border-radius: @val;
   }
-  .bd-rd-t-l-@{counter} {
+  .bd-rd-t-l-@{counter},
+  .bdrd-tl-@{counter} {
     border-top-left-radius: @valImportant;
   }
-  .bd-rd-t-r-@{counter} {
+  .bd-rd-t-r-@{counter},
+  .bdrd-tr-@{counter} {
     border-top-right-radius: @valImportant;
   }
-  .bd-rd-b-l-@{counter} {
+  .bd-rd-b-l-@{counter},
+  .bdrd-bl-@{counter} {
     border-bottom-left-radius: @valImportant;
   }
-  .bd-rd-b-r-@{counter} {
+  .bd-rd-b-r-@{counter},
+  .bdrd-br-@{counter} {
     border-bottom-right-radius: @valImportant;
   }
 
@@ -24,69 +29,23 @@
 .bd-rd-loop(0);
 
 // 50%
-.bd-rd-50-pc {
+.bd-rd-50-pc,
+.bdrd-50p {
   border-radius: 50%;
 }
-.bd-rd-t-l-50-pc {
+.bd-rd-t-l-50-pc,
+.bdrd-tl-50p {
   border-top-left-radius: 50% !important;
 }
-.bd-rd-t-r-50-pc {
+.bd-rd-t-r-50-pc,
+.bdrd-tr-50p {
   border-top-right-radius: 50% !important;
 }
-.bd-rd-b-l-50-pc {
+.bd-rd-b-l-50-pc,
+.bdrd-bl-50p {
   border-bottom-left-radius: 50% !important;
 }
-.bd-rd-b-r-50-pc {
+.bd-rd-b-r-50-pc,
+.bdrd-br-50p {
   border-bottom-right-radius: 50% !important;
 }
-
-// 0.02-0.08rem
-.bd-rd-rem-loop-1(@counter) when (@counter <= 8) {
-  @val: unit(@counter / 100, rem);
-  @valImportant: @val !important;
-
-  .bd-rd-0-0@{counter}-rem {
-    border-radius: @val;
-  }
-  .bd-rd-t-l-0-0@{counter}-rem {
-    border-top-left-radius: @valImportant;
-  }
-  .bd-rd-t-r-0-0@{counter}-rem {
-    border-top-right-radius: @valImportant;
-  }
-  .bd-rd-b-l-0-0@{counter}-rem {
-    border-bottom-left-radius: @valImportant;
-  }
-  .bd-rd-b-r-0-0@{counter}-rem {
-    border-bottom-right-radius: @valImportant;
-  }
-
-  .bd-rd-rem-loop-1(@counter + 2);
-}
-.bd-rd-rem-loop-1(2);
-
-// 0.1-0.2rem
-.bd-rd-rem-loop-2(@counter) when (@counter <= 20) {
-  @val: unit(@counter / 100, rem);
-  @valImportant: @val !important;
-  @name: if(mod(@counter, 10) > 0, @counter, @counter / 10);
-
-  .bd-rd-0-@{name}-rem {
-    border-radius: @val;
-  }
-  .bd-rd-t-l-0-@{name}-rem {
-    border-top-left-radius: @valImportant;
-  }
-  .bd-rd-t-r-0-@{name}-rem {
-    border-top-right-radius: @valImportant;
-  }
-  .bd-rd-b-l-0-@{name}-rem {
-    border-bottom-left-radius: @valImportant;
-  }
-  .bd-rd-b-r-0-@{name}-rem {
-    border-bottom-right-radius: @valImportant;
-  }
-
-  .bd-rd-rem-loop-2(@counter + 2);
-}
-.bd-rd-rem-loop-2(10);

@@ -28,57 +28,72 @@
 }
 
 // float
-.fl-left {
+.fl-left,
+.fl-l {
   float: left;
 }
-.fl-right {
+.fl-right,
+.fl-r {
   float: right;
 }
-.fl-none {
+.fl-none,
+.fl-n {
   float: none !important;
 }
 
 // overflow
-.of-visible {
+.of-visible,
+.of-v {
   overflow: visible !important;
 }
-.of-hidden {
+.of-hidden,
+.of-h {
   overflow: hidden !important;
 }
 
 // cursor
-.cs-default {
+.cs-default,
+.cs-d {
   cursor: default !important;
 }
-.cs-pointer {
+.cs-pointer,
+.cs-p {
   cursor: pointer;
 }
 
 // position
-.ps-absolute {
+.ps-absolute,
+.ps-a {
   position: absolute;
 }
-.ps-relative {
+.ps-relative,
+.ps-r {
   position: relative;
 }
 
 // display
-.dp-block {
+.dp-block,
+.dp-b {
   display: block !important;
 }
-.dp-inline-block {
+.dp-inline-block,
+.dp-ib {
   display: inline-block !important;
 }
-.dp-none {
+.dp-none,
+.dp-n {
   display: none !important;
 }
-.dp-table {
+.dp-table,
+.dp-t {
   display: table !important;
 }
-.dp-table-cell {
+.dp-table-cell,
+.dp-tc {
   display: table-cell !important;
 }
-.dp-flex {
+.dp-flex,
+.dp-f {
   display: flex !important;
 }
 
@@ -104,24 +119,30 @@
 .clear {
   clear: both;
 }
-.clear-left {
+.clear-left,
+.clear-l {
   clear: left;
 }
-.clear-right {
+.clear-right,
+.clear-r {
   clear: right;
 }
 
 // text-align
-.t-a-left {
+.t-a-left,
+.ta-l {
   text-align: left;
 }
-.t-a-right {
+.t-a-right,
+.ta-r {
   text-align: right;
 }
-.t-a-center {
+.t-a-center,
+.ta-c {
   text-align: center;
 }
-.t-a-justify {
+.t-a-justify,
+.ta-j {
   text-align: justify;
 }
 
@@ -134,8 +155,54 @@
   margin: 0;
 }
 
-.text-ellipsis {
+.text-ellipsis,
+.ellipsis {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.text-ellipsis-line-2,
+.ellipsis-l2 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.text-ellipsis-line-3,
+.ellipsis-l3 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.text-ellipsis-line-4,
+.ellipsis-l4 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+
+.text-ellipsis-line-5,
+.ellipsis-l5 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+}
+
+.text-ellipsis-line-6,
+.ellipsis-l6 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
 }

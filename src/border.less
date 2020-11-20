@@ -5,16 +5,20 @@
   .bd-@{name} {
     border: @val;
   }
-  .bd-t-@{name} {
+  .bd-t-@{name},
+  .bdt-@{name} {
     border-top: @valImportant;
   }
-  .bd-r-@{name} {
+  .bd-r-@{name},
+  .bdr-@{name} {
     border-right: @valImportant;
   }
-  .bd-b-@{name} {
+  .bd-b-@{name},
+  .bdb-@{name} {
     border-bottom: @valImportant;
   }
-  .bd-l-@{name} {
+  .bd-l-@{name},
+  .bdl-@{name} {
     border-left: @valImportant;
   }
 }
@@ -35,18 +39,23 @@
 .bd(f, #ffffff);
 
 // none
-.bd-none {
+.bd-none,
+.bd-n {
   border: none;
 }
-.bd-l-none {
-  border-left: none !important;
-}
-.bd-t-none {
+.bd-t-none,
+.bdt-n {
   border-top: none !important;
 }
-.bd-r-none {
+.bd-r-none,
+.bdr-n {
   border-right: none !important;
 }
-.bd-b-none {
+.bd-b-none,
+.bdb-n {
   border-bottom: none !important;
+}
+.bd-l-none,
+.bdl-n {
+  border-left: none !important;
 }

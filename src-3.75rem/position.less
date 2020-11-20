@@ -1,0 +1,44 @@
+// 0.05rem
+.t-0-05-rem,
+.t-005r {
+  top: 0.05rem !important;
+}
+.r-0-05-rem,
+.r-005r {
+  right: 0.05rem !important;
+}
+.b-0-05-rem,
+.b-005r {
+  bottom: 0.05rem !important;
+}
+.l-0-05-rem,
+.l-005r {
+  left: 0.05rem !important;
+}
+
+// 0.1-0.2rem
+.pos-loop(@counter) when (@counter <= 20) {
+  @val: if(@counter > 0, unit(@counter / 100, rem), 0);
+  @valImportant: @val !important;
+  @name: if(mod(@counter, 10) > 0, @counter, @counter / 10);
+
+  .t-0-@{name}-rem,
+  .t-0@{name}r {
+    top: @valImportant;
+  }
+  .r-0-@{name}-rem,
+  .r-0@{name}r {
+    right: @valImportant;
+  }
+  .b-0-@{name}-rem,
+  .b-0@{name}r {
+    bottom: @valImportant;
+  }
+  .l-0-@{name}-rem,
+  .l-0@{name}r {
+    left: @valImportant;
+  }
+
+  .pos-loop(@counter + 5);
+}
+.pos-loop(10);

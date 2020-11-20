@@ -10,7 +10,8 @@
 
 // 5-100%
 .hg-pc-loop(@counter) when (@counter <= 100) {
-  .hg-@{counter}-pc {
+  .hg-@{counter}-pc,
+  .hg-@{counter}p {
     height: unit(@counter, %);
   }
 

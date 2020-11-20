@@ -6,16 +6,20 @@
   .mg-@{counter} {
     margin: @val;
   }
-  .mg-t-@{counter} {
+  .mg-t-@{counter},
+  .mgt-@{counter} {
     margin-top: @valImportant;
   }
-  .mg-r-@{counter} {
+  .mg-r-@{counter},
+  .mgr-@{counter} {
     margin-right: @valImportant;
   }
-  .mg-b-@{counter} {
+  .mg-b-@{counter},
+  .mgb-@{counter} {
     margin-bottom: @valImportant;
   }
-  .mg-l-@{counter} {
+  .mg-l-@{counter},
+  .mgl-@{counter} {
     margin-left: @valImportant;
   }
 
@@ -24,18 +28,23 @@
 .mg-loop(0);
 
 // auto
-.mg-auto {
+.mg-auto,
+.mg-a {
   margin: auto;
 }
-.mg-t-auto {
+.mg-t-auto,
+.mgt-a {
   margin-top: auto !important;
 }
-.mg-r-auto {
+.mg-r-auto,
+.mgr-a {
   margin-right: auto !important;
 }
-.mg-b-auto {
+.mg-b-auto,
+.mgb-a {
   margin-bottom: auto !important;
 }
-.mg-l-auto {
+.mg-l-auto,
+.mgl-a {
   margin-left: auto !important;
 }

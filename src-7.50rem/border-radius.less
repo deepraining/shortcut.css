@@ -1,0 +1,60 @@
+// 0.04-0.08rem
+.bd-rd-loop-1(@counter) when (@counter <= 8) {
+  @val: unit(@counter / 100, rem);
+  @valImportant: @val !important;
+
+  .bd-rd-0-0@{counter}-rem,
+  .bdrd-00@{counter}r {
+    border-radius: @val;
+  }
+  .bd-rd-t-l-0-0@{counter}-rem,
+  .bdrd-tl-00@{counter}r {
+    border-top-left-radius: @valImportant;
+  }
+  .bd-rd-t-r-0-0@{counter}-rem,
+  .bdrd-tr-00@{counter}r {
+    border-top-right-radius: @valImportant;
+  }
+  .bd-rd-b-l-0-0@{counter}-rem,
+  .bdrd-bl-00@{counter}r {
+    border-bottom-left-radius: @valImportant;
+  }
+  .bd-rd-b-r-0-0@{counter}-rem,
+  .bdrd-br-00@{counter}r {
+    border-bottom-right-radius: @valImportant;
+  }
+
+  .bd-rd-loop-1(@counter + 4);
+}
+.bd-rd-loop-1(4);
+
+// 0.12-0.4rem
+.bd-rd-loop-2(@counter) when (@counter <= 40) {
+  @val: unit(@counter / 100, rem);
+  @valImportant: @val !important;
+  @name: if(mod(@counter, 10) > 0, @counter, @counter / 10);
+
+  .bd-rd-0-@{name}-rem,
+  .bdrd-0@{name}r {
+    border-radius: @val;
+  }
+  .bd-rd-t-l-0-@{name}-rem,
+  .bdrd-tl-0@{name}r {
+    border-top-left-radius: @valImportant;
+  }
+  .bd-rd-t-r-0-@{name}-rem,
+  .bdrd-tr-0@{name}r {
+    border-top-right-radius: @valImportant;
+  }
+  .bd-rd-b-l-0-@{name}-rem,
+  .bdrd-bl-0@{name}r {
+    border-bottom-left-radius: @valImportant;
+  }
+  .bd-rd-b-r-0-@{name}-rem,
+  .bdrd-br-0@{name}r {
+    border-bottom-right-radius: @valImportant;
+  }
+
+  .bd-rd-loop-2(@counter + 4);
+}
+.bd-rd-loop-2(12);

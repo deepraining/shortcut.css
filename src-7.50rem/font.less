@@ -1,0 +1,12 @@
+// 0.16-0.4rem
+.f-s-loop(@counter) when (@counter =< 40) {
+  @name: if(mod(@counter, 10) > 0, @counter, @counter / 10);
+
+  .f-s-0-@{name}-rem,
+  .fs-0@{name}r {
+    font-size: unit(@counter / 100, rem);
+  }
+
+  .f-s-loop(@counter + 2);
+}
+.f-s-loop(16);

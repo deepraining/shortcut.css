@@ -1,0 +1,33 @@
+// 0.1-0.9rem
+.wd-loop-1(@counter) when (@counter <= 9) {
+  .wd-0-@{counter}-rem,
+  .wd-0@{counter}r {
+    width: unit(@counter / 10, rem);
+  }
+
+  .wd-loop-1(@counter + 1);
+}
+.wd-loop-1(1);
+
+// 1rem
+.wd-1-rem,
+.wd-1r {
+  width: 1rem;
+}
+
+// 1.1-1.9rem
+.wd-loop-2(@counter) when (@counter <= 9) {
+  .wd-1-@{counter}-rem,
+  .wd-1-@{counter}r {
+    width: unit(1 + @counter / 10, rem);
+  }
+
+  .wd-loop-2(@counter + 1);
+}
+.wd-loop-2(1);
+
+// 2rem
+.wd-2-rem,
+.wd-2r {
+  width: 2rem;
+}

@@ -1,6 +1,7 @@
 // 8-20px
 .f-s-loop(@counter) when (@counter =< 20) {
-  .f-s-@{counter} {
+  .f-s-@{counter},
+  .fs-@{counter} {
     font-size: unit(@counter, px);
   }
 
@@ -9,30 +10,11 @@
 .f-s-loop(8);
 
 // font-weight
-.f-wg-bold {
+.f-wg-bold,
+.fwg-b {
   font-weight: bold;
 }
-.f-wg-normal {
+.f-wg-normal,
+.fwg-n {
   font-weight: normal !important;
 }
-
-// 0.08rem
-.f-s-0-08-rem {
-  font-size: 0.08rem;
-}
-// 0.09rem
-.f-s-0-09-rem {
-  font-size: 0.09rem;
-}
-
-// 0.01rem-0.2rem
-.f-s-rem-loop(@counter) when (@counter =< 20) {
-  @name: if(mod(@counter, 10) > 0, @counter, @counter / 10);
-
-  .f-s-0-@{name}-rem {
-    font-size: unit(@counter / 100, rem);
-  }
-
-  .f-s-rem-loop(@counter + 1);
-}
-.f-s-rem-loop(10);
