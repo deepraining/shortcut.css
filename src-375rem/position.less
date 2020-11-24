@@ -1,25 +1,21 @@
-// 5-20
+// 0-20
 .pos-loop(@counter) when (@counter <= 20) {
-  @val: unit(@counter / 100, rem);
+  @val: if(@counter > 0, unit(@counter / 100, rem), 0);
   @valImportant: @val !important;
 
-  .t-@{counter}-rem,
-  .t-@{counter}r {
+  .t-@{counter} {
     top: @valImportant;
   }
-  .r-@{counter}-rem,
-  .r-@{counter}r {
+  .r-@{counter} {
     right: @valImportant;
   }
-  .b-@{counter}-rem,
-  .b-@{counter}r {
+  .b-@{counter} {
     bottom: @valImportant;
   }
-  .l-@{counter}-rem,
-  .l-@{counter}r {
+  .l-@{counter} {
     left: @valImportant;
   }
 
   .pos-loop(@counter + 5);
 }
-.pos-loop(5);
+.pos-loop(0);

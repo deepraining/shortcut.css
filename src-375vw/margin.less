@@ -1,29 +1,50 @@
-// 5-60
+// 0-60
 .mg-loop(@counter) when (@counter <= 60) {
-  @val: unit(@counter * 100 / 375, vw);
+  @val: if(@counter > 0, unit(@counter * 100 / 375, vw), 0);
   @valImportant: @val !important;
 
-  .mg-@{counter}-vw,
-  .mg-@{counter}w {
+  .mg-@{counter} {
     margin: @val;
   }
-  .mg-t-@{counter}-vw,
-  .mgt-@{counter}w {
+  .mg-t-@{counter},
+  .mgt-@{counter} {
     margin-top: @valImportant;
   }
-  .mg-r-@{counter}-vw,
-  .mgr-@{counter}w {
+  .mg-r-@{counter},
+  .mgr-@{counter} {
     margin-right: @valImportant;
   }
-  .mg-b-@{counter}-vw,
-  .mgb-@{counter}w {
+  .mg-b-@{counter},
+  .mgb-@{counter} {
     margin-bottom: @valImportant;
   }
-  .mg-l-@{counter}-vw,
-  .mgl-@{counter}w {
+  .mg-l-@{counter},
+  .mgl-@{counter} {
     margin-left: @valImportant;
   }
 
   .mg-loop(@counter + 5);
 }
-.mg-loop(5);
+.mg-loop(0);
+
+// auto
+.mg-auto,
+.mg-a {
+  margin: auto;
+}
+.mg-t-auto,
+.mgt-a {
+  margin-top: auto !important;
+}
+.mg-r-auto,
+.mgr-a {
+  margin-right: auto !important;
+}
+.mg-b-auto,
+.mgb-a {
+  margin-bottom: auto !important;
+}
+.mg-l-auto,
+.mgl-a {
+  margin-left: auto !important;
+}

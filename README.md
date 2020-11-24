@@ -6,24 +6,12 @@
 npm install @senntyou/shortcut.css --save
 ```
 
-```
-# 网页版
-import '@senntyou/shortcut.css';
-
-# 如果需要rem单位(屏宽375)
-import '@senntyou/shortcut.css/lib/shortcut.375rem.css';
-# 如果需要rem单位(屏宽750)
-import '@senntyou/shortcut.css/lib/shortcut.750rem.css';
-# 如果需要vw单位(屏宽375)
-import '@senntyou/shortcut.css/lib/shortcut.375vw.css';
-# 如果需要vw单位(屏宽750)
-import '@senntyou/shortcut.css/lib/shortcut.750vw.css';
-```
-
-```
-# 小程序rpx单位(屏宽750)
-import '@senntyou/shortcut.css/lib/shortcut.750rpx.css';
-```
+- `px`单位: `import '@senntyou/shortcut.css'`
+- `rem`单位(屏宽 375): `import '@senntyou/shortcut.css/lib/shortcut.375rem.css'`
+- `rem`单位(屏宽 750): `import '@senntyou/shortcut.css/lib/shortcut.750rem.css'`
+- `vw`单位(屏宽 375): `import '@senntyou/shortcut.css/lib/shortcut.375vw.css'`
+- `vw`单位(屏宽 750): `import '@senntyou/shortcut.css/lib/shortcut.750vw.css'`
+- `rpx`单位(屏宽 750): `import '@senntyou/shortcut.css/lib/shortcut.750rpx.css'`
 
 ## 类名规则
 
@@ -51,10 +39,6 @@ margin-left: 10% => mg-l-10-pc => mgl-10p
 
 - `pc -> %`
 - `p -> %`（简化）
-- `rem -> rem`
-- `r -> rem`（简化）
-- `vw -> vw`
-- `vw -> w`（简化）
 
 ## 缩写
 

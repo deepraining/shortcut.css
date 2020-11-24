@@ -1,5 +1,9 @@
 # changelog
 
+## 3.0.0
+
+- `src/src-375rem/src-750rem/src-375vw/src-750vw/src-750rpx` 单独引用，相互排斥.
+
 ## 2.1.0
 
 - Add `src/src-375rem/src-750rem/src-375vw/src-750vw/src-750rpx`.

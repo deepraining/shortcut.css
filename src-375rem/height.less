@@ -1,10 +1,20 @@
 // 10-200
 .hg-loop(@counter) when (@counter <= 200) {
-  .hg-@{counter}-rem,
-  .hg-@{counter}r {
+  .hg-@{counter} {
     height: unit(@counter / 100, rem);
   }
 
   .hg-loop(@counter + 10);
 }
 .hg-loop(10);
+
+// 5-100%
+.hg-pc-loop(@counter) when (@counter <= 100) {
+  .hg-@{counter}-pc,
+  .hg-@{counter}p {
+    height: unit(@counter, %);
+  }
+
+  .hg-pc-loop(@counter + 5);
+}
+.hg-pc-loop(5);

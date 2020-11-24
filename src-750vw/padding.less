@@ -1,29 +1,50 @@
-// 10-120
+// 0-120
 .pd-loop(@counter) when (@counter <= 120) {
-  @val: unit(@counter * 100 / 750, vw);
+  @val: if(@counter > 0, unit(@counter * 100 / 750, vw), 0);
   @valImportant: @val !important;
 
-  .pd-@{counter}-vw,
-  .pd-@{counter}w {
+  .pd-@{counter} {
     padding: @val;
   }
-  .pd-t-@{counter}-vw,
-  .pdt-@{counter}w {
+  .pd-t-@{counter},
+  .pdt-@{counter} {
     padding-top: @valImportant;
   }
-  .pd-r-@{counter}-vw,
-  .pdr-@{counter}w {
+  .pd-r-@{counter},
+  .pdr-@{counter} {
     padding-right: @valImportant;
   }
-  .pd-b-@{counter}-vw,
-  .pdb-@{counter}w {
+  .pd-b-@{counter},
+  .pdb-@{counter} {
     padding-bottom: @valImportant;
   }
-  .pd-l-@{counter}-vw,
-  .pdl-@{counter}w {
+  .pd-l-@{counter},
+  .pdl-@{counter} {
     padding-left: @valImportant;
   }
 
   .pd-loop(@counter + 10);
 }
-.pd-loop(10);
+.pd-loop(0);
+
+// auto
+.pd-auto,
+.pd-a {
+  padding: auto;
+}
+.pd-t-auto,
+.pdt-a {
+  padding-top: auto !important;
+}
+.pd-r-auto,
+.pdr-a {
+  padding-right: auto !important;
+}
+.pd-b-auto,
+.pdb-a {
+  padding-bottom: auto !important;
+}
+.pd-l-auto,
+.pdl-a {
+  padding-left: auto !important;
+}

@@ -1,6 +1,6 @@
 {
   "name": "@senntyou/shortcut.css",
-  "version": "2.1.1",
+  "version": "3.0.0",
   "main": "lib/shortcut.css",
   "description": "A commonly used styles collection, margin, padding, border, width, height, font ...",
   "repository": {

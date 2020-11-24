@@ -1,10 +1,20 @@
 // 8-20
 .f-s-loop(@counter) when (@counter =< 20) {
-  .f-s-@{counter}-vw,
-  .fs-@{counter}w {
+  .f-s-@{counter},
+  .fs-@{counter} {
     font-size: unit(@counter * 100 / 375, vw);
   }
 
   .f-s-loop(@counter + 1);
 }
 .f-s-loop(8);
+
+// font-weight
+.f-wg-bold,
+.fwg-b {
+  font-weight: bold;
+}
+.f-wg-normal,
+.fwg-n {
+  font-weight: normal !important;
+}

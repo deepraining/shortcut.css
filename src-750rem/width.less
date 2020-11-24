@@ -1,10 +1,20 @@
 // 20-400
 .wd-loop(@counter) when (@counter <= 400) {
-  .wd-@{counter}-rem,
-  .wd-@{counter}r {
+  .wd-@{counter} {
     width: unit(@counter / 100, rem);
   }
 
   .wd-loop(@counter + 20);
 }
 .wd-loop(20);
+
+// 5-100%
+.wd-pc-loop(@counter) when (@counter <= 100) {
+  .wd-@{counter}-pc,
+  .wd-@{counter}p {
+    width: unit(@counter, %);
+  }
+
+  .wd-pc-loop(@counter + 5);
+}
+.wd-pc-loop(5);

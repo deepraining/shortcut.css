@@ -1,7 +1,27 @@
+.l-hg-1,
+.lhg-1 {
+  line-height: 1;
+}
+
+.l-hg-loop(@counter) when (@counter =< 9) {
+  .l-hg-1-@{counter},
+  .lhg-1-@{counter} {
+    line-height: 1 + @counter / 10;
+  }
+
+  .l-hg-loop(@counter + 1);
+}
+.l-hg-loop(1);
+
+.l-hg-2,
+.lhg-2 {
+  line-height: 2;
+}
+
 // 14-50
 .l-hg-loop-2(@counter) when (@counter =< 50) {
-  .l-hg-@{counter}-rem,
-  .lhg-@{counter}r {
+  .l-hg-@{counter},
+  .lhg-@{counter} {
     line-height: unit(@counter / 100, rem);
   }
 
