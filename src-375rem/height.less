@@ -1,0 +1,10 @@
+// 10-200
+.hg-loop(@counter) when (@counter <= 200) {
+  .hg-@{counter}-rem,
+  .hg-@{counter}r {
+    height: unit(@counter / 100, rem);
+  }
+
+  .hg-loop(@counter + 10);
+}
+.hg-loop(10);

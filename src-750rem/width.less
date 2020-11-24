@@ -1,0 +1,10 @@
+// 20-400
+.wd-loop(@counter) when (@counter <= 400) {
+  .wd-@{counter}-rem,
+  .wd-@{counter}r {
+    width: unit(@counter / 100, rem);
+  }
+
+  .wd-loop(@counter + 20);
+}
+.wd-loop(20);

@@ -1,6 +1,6 @@
 {
   "name": "@senntyou/shortcut.css",
-  "version": "1.1.0",
+  "version": "2.1.0",
   "main": "lib/shortcut.css",
   "description": "A commonly used styles collection, margin, padding, border, width, height, font ...",
   "repository": {
@@ -33,10 +33,12 @@
     "stylelint:fix": "stylelint \"./**/*.{css,less,scss,sass}\" --fix",
     "lint-staged": "lint-staged",
     "build:base": "lessc src/index.less lib/shortcut.css",
-    "build:3.75rem": "lessc src-3.75rem/index.less lib/shortcut.3.75rem.css",
-    "build:7.50rem": "lessc src-7.50rem/index.less lib/shortcut.7.50rem.css",
+    "build:375rem": "lessc src-375rem/index.less lib/shortcut.375rem.css",
+    "build:750rem": "lessc src-750rem/index.less lib/shortcut.750rem.css",
+    "build:375vw": "lessc src-375vw/index.less lib/shortcut.375vw.css",
+    "build:750vw": "lessc src-750vw/index.less lib/shortcut.750vw.css",
     "build:750rpx": "lessc src-750rpx/index.less lib/shortcut.750rpx.css",
-    "build": "npm run build:base && npm run build:3.75rem && npm run build:7.50rem && npm run build:750rpx",
+    "build": "npm run build:base && npm run build:375rem && npm run build:750rem && npm run build:375vw && npm run build:750vw && npm run build:750rpx",
     "prepublishOnly": "npm run build",
     "pretest": "npm run build",
     "test": "jest test",

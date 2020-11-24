@@ -1,0 +1,10 @@
+// 28-100
+.l-hg-loop-2(@counter) when (@counter =< 100) {
+  .l-hg-@{counter}-vw,
+  .lhg-@{counter}w {
+    line-height: unit(@counter * 100 / 375, vw);
+  }
+
+  .l-hg-loop-2(@counter + 4);
+}
+.l-hg-loop-2(28);

@@ -10,15 +10,19 @@ npm install @senntyou/shortcut.css --save
 # 网页版
 import '@senntyou/shortcut.css';
 
-# 如果需要rem单位(屏宽3.75rem)
-import '@senntyou/shortcut.css/lib/shortcut.3.75rem.css';
-# 如果需要rem单位(屏宽7.50rem)
-import '@senntyou/shortcut.css/lib/shortcut.7.50rem.css';
+# 如果需要rem单位(屏宽375)
+import '@senntyou/shortcut.css/lib/shortcut.375rem.css';
+# 如果需要rem单位(屏宽750)
+import '@senntyou/shortcut.css/lib/shortcut.750rem.css';
+# 如果需要vw单位(屏宽375)
+import '@senntyou/shortcut.css/lib/shortcut.375vw.css';
+# 如果需要vw单位(屏宽750)
+import '@senntyou/shortcut.css/lib/shortcut.750vw.css';
 ```
 
 ```
-# 小程序(屏宽750rpx)
-import '@senntyou/shortcut.css/lib/shortcut.375rpx.css';
+# 小程序rpx单位(屏宽750)
+import '@senntyou/shortcut.css/lib/shortcut.750rpx.css';
 ```
 
 ## 类名规则
@@ -37,7 +41,6 @@ import '@senntyou/shortcut.css/lib/shortcut.375rpx.css';
 ```
 margin-top: 20px => mg-t-20 => mgt-20
 margin-left: 10% => mg-l-10-pc => mgl-10p
-padding-right: 0.05rem => pd-r-0-05-rem => pdr-005r
 ```
 
 1. 类名中只保留一个 `-`，属性名与属性值中的 `-` 都不保留
@@ -50,6 +53,8 @@ padding-right: 0.05rem => pd-r-0-05-rem => pdr-005r
 - `p -> %`（简化）
 - `rem -> rem`
 - `r -> rem`（简化）
+- `vw -> vw`
+- `vw -> w`（简化）
 
 ## 缩写
 

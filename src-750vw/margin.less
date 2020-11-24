@@ -1,0 +1,29 @@
+// 10-120
+.mg-loop(@counter) when (@counter <= 120) {
+  @val: unit(@counter * 100 / 375, vw);
+  @valImportant: @val !important;
+
+  .mg-@{counter}-vw,
+  .mg-@{counter}w {
+    margin: @val;
+  }
+  .mg-t-@{counter}-vw,
+  .mgt-@{counter}w {
+    margin-top: @valImportant;
+  }
+  .mg-r-@{counter}-vw,
+  .mgr-@{counter}w {
+    margin-right: @valImportant;
+  }
+  .mg-b-@{counter}-vw,
+  .mgb-@{counter}w {
+    margin-bottom: @valImportant;
+  }
+  .mg-l-@{counter}-vw,
+  .mgl-@{counter}w {
+    margin-left: @valImportant;
+  }
+
+  .mg-loop(@counter + 10);
+}
+.mg-loop(10);

@@ -1,0 +1,10 @@
+// 8-20
+.f-s-loop(@counter) when (@counter =< 20) {
+  .f-s-@{counter}-rem,
+  .fs-@{counter}r {
+    font-size: unit(@counter / 100, rem);
+  }
+
+  .f-s-loop(@counter + 1);
+}
+.f-s-loop(8);

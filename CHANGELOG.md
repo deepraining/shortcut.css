@@ -1,5 +1,9 @@
 # changelog
 
+## 2.1.0
+
+- Add `src/src-375rem/src-750rem/src-375vw/src-750vw/src-750rpx`.
+
 ## 1.1.0
 
 - Add `src/src-3.75rem/src-7.50rem/src-750rpx`.

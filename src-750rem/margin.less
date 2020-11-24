@@ -1,0 +1,29 @@
+// 10-120
+.mg-loop(@counter) when (@counter <= 120) {
+  @val: unit(@counter / 100, rem);
+  @valImportant: @val !important;
+
+  .mg-@{counter}-rem,
+  .mg-@{counter}r {
+    margin: @val;
+  }
+  .mg-t-@{counter}-rem,
+  .mgt-@{counter}r {
+    margin-top: @valImportant;
+  }
+  .mg-r-@{counter}-rem,
+  .mgr-@{counter}r {
+    margin-right: @valImportant;
+  }
+  .mg-b-@{counter}-rem,
+  .mgb-@{counter}r {
+    margin-bottom: @valImportant;
+  }
+  .mg-l-@{counter}-rem,
+  .mgl-@{counter}r {
+    margin-left: @valImportant;
+  }
+
+  .mg-loop(@counter + 10);
+}
+.mg-loop(10);

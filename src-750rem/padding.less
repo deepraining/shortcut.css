@@ -1,0 +1,29 @@
+// 10-120
+.pd-loop(@counter) when (@counter <= 120) {
+  @val: unit(@counter / 100, rem);
+  @valImportant: @val !important;
+
+  .pd-@{counter}-rem,
+  .pd-@{counter}r {
+    padding: @val;
+  }
+  .pd-t-@{counter}-rem,
+  .pdt-@{counter}r {
+    padding-top: @valImportant;
+  }
+  .pd-r-@{counter}-rem,
+  .pdr-@{counter}r {
+    padding-right: @valImportant;
+  }
+  .pd-b-@{counter}-rem,
+  .pdb-@{counter}r {
+    padding-bottom: @valImportant;
+  }
+  .pd-l-@{counter}-rem,
+  .pdl-@{counter}r {
+    padding-left: @valImportant;
+  }
+
+  .pd-loop(@counter + 10);
+}
+.pd-loop(10);

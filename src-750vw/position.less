@@ -1,0 +1,25 @@
+// 10-40
+.pos-loop(@counter) when (@counter <= 40) {
+  @val: unit(@counter * 100 / 375, vw);
+  @valImportant: @val !important;
+
+  .t-@{counter}-vw,
+  .t-@{counter}w {
+    top: @valImportant;
+  }
+  .r-@{counter}-vw,
+  .r-@{counter}w {
+    right: @valImportant;
+  }
+  .b-@{counter}-vw,
+  .b-@{counter}w {
+    bottom: @valImportant;
+  }
+  .l-@{counter}-vw,
+  .l-@{counter}w {
+    left: @valImportant;
+  }
+
+  .pos-loop(@counter + 10);
+}
+.pos-loop(10);
